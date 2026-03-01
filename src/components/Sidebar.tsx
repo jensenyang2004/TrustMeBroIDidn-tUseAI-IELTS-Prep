@@ -10,16 +10,15 @@ import {
   User as UserIcon,
   LogOut,
   Coins,
-  Loader2
+  Loader2,
+  Users
 } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "./AuthProvider";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
-console.log("Current API_URL:", API_URL);
 
 export default function Sidebar() {
-
   const pathname = usePathname();
   const router = useRouter();
   const { user } = useAuth();
@@ -51,7 +50,7 @@ export default function Sidebar() {
     fetchCredits();
     const interval = setInterval(fetchCredits, 5000);
     return () => clearInterval(interval);
-  }, [pathname]);
+  }, [pathname, user]);
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
@@ -62,6 +61,7 @@ export default function Sidebar() {
     { name: "Practice", href: "/", icon: PenTool },
     { name: "History", href: "/user", icon: History },
     { name: "Settings", href: "/settings", icon: Settings },
+    { name: "Team", href: "/team", icon: Users },
   ];
 
   return (
