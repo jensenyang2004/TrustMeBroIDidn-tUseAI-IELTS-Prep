@@ -319,7 +319,7 @@ function EssayTab({
               </div>
             ) : (
               <textarea
-                className="w-full h-32 p-4 rounded-xl border-zinc-200 bg-white shadow-sm focus:ring-2 focus:ring-zinc-900 focus:border-zinc-900 transition-all outline-none"
+                className="w-full h-32 p-4 rounded-xl border-zinc-200 bg-white shadow-sm focus:ring-2 focus:ring-zinc-900 focus:border-zinc-900 transition-all outline-none text-zinc-900"
                 placeholder={taskType === "task1" ? "Describe the graph/chart..." : "Paste an IELTS Task 2 prompt here..."}
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
@@ -371,7 +371,7 @@ function EssayTab({
             </div>
           ) : (
             <textarea
-              className="w-full h-80 p-6 rounded-xl border-zinc-200 bg-white shadow-sm font-serif text-lg leading-relaxed focus:ring-2 focus:ring-zinc-900 focus:border-zinc-900 transition-all outline-none"
+              className="w-full h-80 p-6 rounded-xl border-zinc-200 bg-white shadow-sm font-serif text-lg leading-relaxed focus:ring-2 focus:ring-zinc-900 focus:border-zinc-900 transition-all outline-none text-zinc-900"
               placeholder="Start writing your response here..."
               value={response}
               onChange={(e) => setResponse(e.target.value)}
@@ -629,7 +629,7 @@ function ExerciseTab({ onVaultUpdate }: { onVaultUpdate: () => void }) {
                 </div>
               ) : (
                 <textarea
-                  className="w-full h-40 p-6 rounded-xl border-zinc-200 bg-white shadow-sm font-serif text-lg leading-relaxed focus:ring-2 focus:ring-zinc-900 focus:border-zinc-900 transition-all outline-none"
+                  className="w-full h-40 p-6 rounded-xl border-zinc-200 bg-white shadow-sm font-serif text-lg leading-relaxed text-zinc-900 focus:ring-2 focus:ring-zinc-900 focus:border-zinc-900 transition-all outline-none"
                   placeholder="Type your response here..."
                   value={userAnswer}
                   onChange={(e) => setUserAnswer(e.target.value)}

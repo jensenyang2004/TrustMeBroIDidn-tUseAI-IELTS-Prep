@@ -73,7 +73,7 @@ export default function RegisterPage() {
                   <input
                     type="text"
                     required
-                    className="w-full pl-10 pr-4 py-3 rounded-xl border-zinc-200 bg-zinc-50 focus:ring-2 focus:ring-zinc-900 transition-all outline-none"
+                    className="w-full pl-10 pr-4 py-3 rounded-xl border-zinc-200 bg-zinc-50 focus:ring-2 focus:ring-zinc-900 transition-all outline-none text-zinc-900"
                     placeholder="Your name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -88,7 +88,7 @@ export default function RegisterPage() {
                   <input
                     type="email"
                     required
-                    className="w-full pl-10 pr-4 py-3 rounded-xl border-zinc-200 bg-zinc-50 focus:ring-2 focus:ring-zinc-900 transition-all outline-none"
+                    className="w-full pl-10 pr-4 py-3 rounded-xl border-zinc-200 bg-zinc-50 focus:ring-2 focus:ring-zinc-900 transition-all outline-none text-zinc-900"
                     placeholder="name@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -103,7 +103,7 @@ export default function RegisterPage() {
                   <input
                     type="password"
                     required
-                    className="w-full pl-10 pr-4 py-3 rounded-xl border-zinc-200 bg-zinc-50 focus:ring-2 focus:ring-zinc-900 transition-all outline-none"
+                    className="w-full pl-10 pr-4 py-3 rounded-xl border-zinc-200 bg-zinc-50 focus:ring-2 focus:ring-zinc-900 transition-all outline-none text-zinc-900"
                     placeholder="Min 6 characters"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
