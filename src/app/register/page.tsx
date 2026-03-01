@@ -47,9 +47,8 @@ export default function RegisterPage() {
     <div className="min-h-screen flex items-center justify-center p-4 bg-[#fafafa]">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-black tracking-tight text-zinc-900 flex items-center justify-center">
-            <Sparkles className="mr-2 text-amber-500 fill-amber-500" />
-            IELTS Vibe Tutor
+          <h1 className="font-serif text-3xl font-black tracking-tight text-zinc-900 flex items-center justify-center md:justify-start">
+            Trust Me Bro I Didn't Use AI - IELTS Prep
           </h1>
           <p className="text-zinc-500 font-medium font-serif">Start your journey to Band 8.0+</p>
         </div>
