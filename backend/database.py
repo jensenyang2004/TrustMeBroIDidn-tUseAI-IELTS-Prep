@@ -6,7 +6,8 @@ db = SQLAlchemy()
 
 class User(db.Model):
     __tablename__ = 'users'
-    id = db.Column(db.Integer, primary_key=True)
+    # Use the Supabase User UUID as the primary key
+    id = db.Column(db.String(255), primary_key=True) 
     name = db.Column(db.String(100), default="IELTS Candidate")
     target_band = db.Column(db.Float, default=7.5)
     credits = db.Column(db.Integer, default=20)
@@ -15,10 +16,10 @@ class User(db.Model):
 class Submission(db.Model):
     __tablename__ = 'submissions'
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    task_type = db.Column(db.String(20)) # task1, task2, exercise
-    category = db.Column(db.String(50), nullable=True) # for exercises
-    subcategory = db.Column(db.String(50), nullable=True) # for exercises
+    user_id = db.Column(db.String(255), db.ForeignKey('users.id'))
+    task_type = db.Column(db.String(20))
+    category = db.Column(db.String(50), nullable=True)
+    subcategory = db.Column(db.String(50), nullable=True)
     prompt_text = db.Column(db.Text)
     user_response = db.Column(db.Text)
     overall_band_score = db.Column(db.Float, nullable=True)
@@ -27,7 +28,6 @@ class Submission(db.Model):
     improved_version = db.Column(db.Text, nullable=True)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
-    # Relationships
     pillars = db.relationship('PillarScore', backref='submission', cascade="all, delete-orphan")
     errors = db.relationship('ErrorAnnotation', backref='submission', cascade="all, delete-orphan")
     improvement_notes = db.relationship('ImprovementNote', backref='submission', cascade="all, delete-orphan")
@@ -45,7 +45,7 @@ class ErrorAnnotation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     submission_id = db.Column(db.Integer, db.ForeignKey('submissions.id'))
     original = db.Column(db.Text)
-    improved = db.Column(db.Text) # Maps to 'suggestion' in schema
+    improved = db.Column(db.Text)
     issue = db.Column(db.Text)
     error_type = db.Column(db.String(50))
 
@@ -53,7 +53,7 @@ class ImprovementNote(db.Model):
     __tablename__ = 'improvement_notes'
     id = db.Column(db.Integer, primary_key=True)
     submission_id = db.Column(db.Integer, db.ForeignKey('submissions.id'))
-    note_type = db.Column(db.String(50)) # rename from type to avoid keyword conflict
+    note_type = db.Column(db.String(50))
     before = db.Column(db.Text)
     after = db.Column(db.Text)
     reason = db.Column(db.Text)
@@ -61,7 +61,7 @@ class ImprovementNote(db.Model):
 class VaultItem(db.Model):
     __tablename__ = 'learning_vault'
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    user_id = db.Column(db.String(255), db.ForeignKey('users.id'))
     note_type = db.Column(db.String(50))
     before = db.Column(db.Text)
     after = db.Column(db.Text)

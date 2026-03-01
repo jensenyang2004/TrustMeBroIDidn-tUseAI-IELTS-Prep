@@ -1,3 +1,7 @@
+import { supabase } from "./supabase";
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
+
 export type PracticeType = 'INTRO_BOOST' | 'ARGUMENT_BUILD' | 'DATA_SNAP' | 'VOCAB_SWAP';
 
 export interface UserBuffer {
@@ -20,15 +24,21 @@ export const updateBuffer = (newWeaknesses: string[]) => {
 };
 
 export async function generateShortPractice(type?: PracticeType) {
+  const { data: { session } } = await supabase.auth.getSession();
+  const token = session?.access_token;
+
   const buffer = getBuffer();
   const topWeaknesses = Object.entries(buffer.weaknesses)
     .sort(([, a], [, b]) => b - a)
     .slice(0, 3)
     .map(([w]) => w);
 
-  const response = await fetch("http://localhost:5001/api/practice", {
+  const response = await fetch(`${API_URL}/api/practice`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${token}`
+    },
     body: JSON.stringify({ 
       type: type,
       weaknesses: topWeaknesses 

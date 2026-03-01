@@ -1,23 +1,29 @@
+import { supabase } from "./supabase";
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
+
 export async function gradeSubmission(
   promptText: string, 
   userResponse: string, 
   taskType: "task1" | "task2" = "task2",
   imageFile?: File | null
 ) {
+  const { data: { session } } = await supabase.auth.getSession();
+  const token = session?.access_token;
+
   let body: any;
-  let headers: any = {};
+  let headers: any = {
+    "Authorization": `Bearer ${token}`
+  };
 
   if (taskType === "task1" && imageFile) {
-    // One-step vision approach: send as FormData
     const formData = new FormData();
     formData.append("prompt_text", promptText);
     formData.append("user_response", userResponse);
     formData.append("task_type", taskType);
     formData.append("image", imageFile);
     body = formData;
-    // Don't set Content-Type header, fetch will do it automatically for FormData
   } else {
-    // Standard Task 2 or Task 1 without image: send as JSON
     headers["Content-Type"] = "application/json";
     body = JSON.stringify({ 
       prompt_text: promptText, 
@@ -26,7 +32,7 @@ export async function gradeSubmission(
     });
   }
 
-  const response = await fetch("http://localhost:5001/api/grade", {
+  const response = await fetch(`${API_URL}/api/grade`, {
     method: "POST",
     headers: headers,
     body: body,

@@ -1,3 +1,7 @@
+import { supabase } from "./supabase";
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
+
 export interface Exercise {
   category: string;
   subcategory: string;
@@ -14,7 +18,7 @@ export interface ErrorAnnotation {
 }
 
 export interface ImprovementNote {
-  type: "vocabulary_upgrade" | "restructure" | "formality_adjustment" | "conciseness" | "coherence_link" | "task_fulfilment";
+  type: "vocabulary_upgrade" | "restructure" | "formality_adjustment" | "conciseness" | "coherence_link" | "task_fulfilment" | "data_precision";
   before: string;
   after: string;
   reason: string;
@@ -40,9 +44,15 @@ export const EXERCISE_CATEGORIES = {
 };
 
 export async function generateExercise(category: string, subcategory?: string): Promise<Exercise> {
-  const response = await fetch("http://localhost:5001/api/exercise/generate", {
+  const { data: { session } } = await supabase.auth.getSession();
+  const token = session?.access_token;
+
+  const response = await fetch(`${API_URL}/api/exercise/generate`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${token}`
+    },
     body: JSON.stringify({ category, subcategory }),
   });
 
@@ -54,9 +64,15 @@ export async function generateExercise(category: string, subcategory?: string): 
 }
 
 export async function gradeExercise(question: Exercise, user_answer: string): Promise<ExerciseGradingResponse> {
-  const response = await fetch("http://localhost:5001/api/exercise/grade", {
+  const { data: { session } } = await supabase.auth.getSession();
+  const token = session?.access_token;
+
+  const response = await fetch(`${API_URL}/api/exercise/grade`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${token}`
+    },
     body: JSON.stringify({ question, user_answer }),
   });
 

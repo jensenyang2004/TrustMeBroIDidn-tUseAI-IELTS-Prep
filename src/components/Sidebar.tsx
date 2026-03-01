@@ -23,8 +23,17 @@ export default function Sidebar() {
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchCredits = async () => {
+    if (!user) return;
     try {
-      const res = await fetch("http://localhost:5001/api/user/credits");
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      if (!token) return;
+      
+      const res = await fetch("http://localhost:5001/api/user/credits", {
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      });
       const data = await res.json();
       setCredits(data.credits);
     } catch (err) {

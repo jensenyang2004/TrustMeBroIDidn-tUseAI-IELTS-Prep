@@ -16,6 +16,9 @@ import {
   Loader2
 } from "lucide-react";
 import { getVault, VaultItem, removeFromVault } from "@/lib/vault";
+import { supabase } from "@/lib/supabase";
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
 
 export default function UserPage() {
   const [vault, setVault] = useState<VaultItem[]>([]);
@@ -27,12 +30,22 @@ export default function UserPage() {
 
   useEffect(() => {
     const fetchData = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      
+      if (!token) {
+        setIsLoading(false);
+        return;
+      }
+
+      const headers = { "Authorization": `Bearer ${token}` };
+
       try {
         const [vaultData, historyData, statsData, activityData] = await Promise.all([
           getVault(),
-          fetch("http://localhost:5001/api/user/history").then(res => res.json()),
-          fetch("http://localhost:5001/api/user/stats").then(res => res.json()),
-          fetch("http://localhost:5001/api/user/activity").then(res => res.json())
+          fetch(`${API_URL}/api/user/history`, { headers }).then(res => res.json()),
+          fetch(`${API_URL}/api/user/stats`, { headers }).then(res => res.json()),
+          fetch(`${API_URL}/api/user/activity`, { headers }).then(res => res.json())
         ]);
         setVault(vaultData);
         setHistory(historyData);
@@ -104,8 +117,8 @@ export default function UserPage() {
             <TrendingUp size={24} />
           </div>
           <div>
-            <p className="text-sm font-bold text-zinc-500 uppercase tracking-wider">Growth</p>
-            <p className="text-2xl font-black text-zinc-900">{stats?.growth || "+0.0"}</p>
+            <p className="text-sm font-bold text-zinc-500 uppercase tracking-wider">Credits</p>
+            <p className="text-2xl font-black text-zinc-900">{stats?.credits || 0}</p>
           </div>
         </div>
       </div>
