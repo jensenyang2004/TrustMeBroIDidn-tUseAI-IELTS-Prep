@@ -6,18 +6,69 @@ import { generateShortPractice, updateBuffer, getBuffer, UserBuffer } from "@/li
 import { 
   Loader2, Sparkles, Trophy, BookOpen, AlertCircle, 
   ChevronRight, CheckCircle2, XCircle, Info, ArrowRight,
-  PenTool, Brain, Bookmark, Plus, Trash2
+  PenTool, Brain, Bookmark, Plus, Trash2, Check
 } from "lucide-react";
 import { 
   generateExercise, gradeExercise, 
   Exercise, ExerciseGradingResponse, EXERCISE_CATEGORIES 
 } from "@/lib/exercise";
 import { getVault, addToVault, removeFromVault, VaultItem } from "@/lib/vault";
+import { useAuth } from "@/components/AuthProvider";
+import { useRouter } from "next/navigation";
+
+// Shared component for saving feedback
+function SavedNoteButton({ onSave }: { onSave: () => Promise<void> }) {
+  const [isSaved, setIsSaved] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+
+  const handleSave = async () => {
+    if (isSaved || isSaving) return;
+    setIsSaving(true);
+    await onSave();
+    setIsSaving(false);
+    setIsSaved(true);
+    setTimeout(() => setIsSaved(false), 2000);
+  };
+
+  return (
+    <button 
+      onClick={handleSave}
+      disabled={isSaving}
+      className={`absolute top-4 right-4 p-2 rounded-lg shadow-sm transition-all flex items-center gap-1 text-[10px] font-black uppercase tracking-tighter border ${
+        isSaved 
+          ? "bg-green-500 text-white border-green-600 scale-105" 
+          : "bg-white border-amber-100 text-amber-500 hover:bg-amber-500 hover:text-white"
+      }`}
+    >
+      {isSaving ? (
+        <Loader2 size={14} className="animate-spin" />
+      ) : isSaved ? (
+        <>
+          <Check size={14} />
+          Saved!
+        </>
+      ) : (
+        <>
+          <Plus size={14} />
+          Save to Vault
+        </>
+      )}
+    </button>
+  );
+}
 
 export default function Home() {
+  const { user, loading } = useAuth();
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<"essay" | "exercise">("essay");
   const [buffer, setBuffer] = useState<UserBuffer>({ weaknesses: {}, mastered_vocab: [] });
   const [vault, setVault] = useState<VaultItem[]>([]);
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.push("/login");
+    }
+  }, [user, loading, router]);
 
   useEffect(() => {
     setBuffer(getBuffer());
@@ -34,6 +85,14 @@ export default function Home() {
     const data = await getVault();
     setVault(data);
   };
+
+  if (loading || !user) {
+    return (
+      <div className="flex h-screen items-center justify-center">
+        <Loader2 className="animate-spin text-zinc-400" size={40} />
+      </div>
+    );
+  }
 
   return (
     <main className="min-h-screen p-4 md:p-8 max-w-6xl mx-auto space-y-8 bg-[#fafafa]">
@@ -155,11 +214,6 @@ function EssayTab({
     setPrompt("");
     setImageFile(null);
     setImagePreview(null);
-  };
-
-  const saveToVault = async (note: any) => {
-    await addToVault(note);
-    onVaultUpdate();
   };
 
   const deleteFromVault = async (id: string) => {
@@ -427,13 +481,10 @@ function EssayTab({
                       </div>
                       <p className="text-xs text-zinc-500">{note.reason}</p>
                       
-                      <button 
-                        onClick={() => saveToVault(note)}
-                        className="absolute top-4 right-4 p-2 bg-white border border-amber-100 text-amber-500 rounded-lg shadow-sm hover:bg-amber-500 hover:text-white transition-all flex items-center gap-1 text-[10px] font-black uppercase tracking-tighter"
-                      >
-                        <Plus size={14} />
-                        Save to Vault
-                      </button>
+                      <SavedNoteButton onSave={async () => {
+                        await addToVault(note);
+                        onVaultUpdate();
+                      }} />
                     </div>
                   ))}
                 </div>
@@ -664,13 +715,10 @@ function ExerciseTab({ onVaultUpdate }: { onVaultUpdate: () => void }) {
                       </div>
                       <p className="text-xs text-zinc-500">{note.reason}</p>
                       
-                      <button 
-                        onClick={() => saveToVault(note)}
-                        className="absolute top-4 right-4 p-2 bg-white border border-amber-100 text-amber-500 rounded-lg shadow-sm hover:bg-amber-500 hover:text-white transition-all flex items-center gap-1 text-[10px] font-black uppercase tracking-tighter"
-                      >
-                        <Plus size={14} />
-                        Save to Vault
-                      </button>
+                      <SavedNoteButton onSave={async () => {
+                        await addToVault(note);
+                        onVaultUpdate();
+                      }} />
                     </div>
                   ))}
                 </div>

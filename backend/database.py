@@ -9,6 +9,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), default="IELTS Candidate")
     target_band = db.Column(db.Float, default=7.5)
+    credits = db.Column(db.Integer, default=20)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 class Submission(db.Model):

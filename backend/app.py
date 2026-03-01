@@ -15,15 +15,25 @@ from database import db, User, Submission, PillarScore, ErrorAnnotation, Improve
 from datetime import datetime, date
 from sqlalchemy import func
 
-# Load .env.local from project root
-load_dotenv(os.path.join(os.path.dirname(__file__), "../.env.local"))
+# Load .env.local from project root using absolute path
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, "../.env.local"))
 
 app = Flask(__name__)
 CORS(app)
 
-# Database Configuration
-basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'ielts_vibe.db')
+# Supabase Database Configuration
+# Using SUPABASE_URL to match .env.local
+db_uri = os.getenv("SUPABASE_URL")
+if not db_uri:
+    raise RuntimeError("SUPABASE_URL environment variable is not set. Check your .env.local file.")
+
+# SQLAlchemy 1.4+ requires postgresql:// instead of postgres:// 
+# though Supabase usually provides postgresql:// already.
+if db_uri.startswith("postgres://"):
+    db_uri = db_uri.replace("postgres://", "postgresql://", 1)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
@@ -32,7 +42,7 @@ with app.app_context():
     db.create_all()
     # Ensure a default user exists
     if not User.query.first():
-        db.session.add(User(name="IELTS Candidate", target_band=7.5))
+        db.session.add(User(name="IELTS Candidate", target_band=7.5, credits=20))
         db.session.commit()
 
 api_key = os.getenv("NEXT_PUBLIC_GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
@@ -60,7 +70,7 @@ def save_submission(task_type, prompt_text, user_response, result_dict, category
         improved_version=result_dict.get("improved_version")
     )
     db.session.add(submission)
-    db.session.flush() # Get the submission ID
+    db.session.flush()
 
     # Save Pillars
     pillars_data = result_dict.get("pillars", {})
@@ -98,6 +108,8 @@ def save_submission(task_type, prompt_text, user_response, result_dict, category
 
 @app.route("/api/grade", methods=["POST"])
 def grade():
+    user = User.query.first()
+    
     if request.is_json:
         data = request.json
         prompt_text = data.get("prompt_text")
@@ -107,6 +119,11 @@ def grade():
         prompt_text = request.form.get("prompt_text")
         user_response = request.form.get("user_response")
         task_type_input = request.form.get("task_type", "task1")
+
+    COSTS = {"exercise": 1, "task1": 3, "task2": 5}
+    cost = COSTS.get(task_type_input, 0)
+    if user.credits < cost:
+        return jsonify({"error": f"Insufficient credits. Requires {cost}."}), 402
 
     result_dict = None
     if task_type_input == "task2":
@@ -134,21 +151,30 @@ def grade():
             return jsonify({"error": f"Task 1 grading failed: {str(e)}"}), 500
 
     if result_dict:
+        user.credits -= cost
         save_submission(task_type_input, prompt_text, user_response, result_dict)
         result_dict["prompt_text"] = prompt_text
         result_dict["user_response"] = user_response
+        result_dict["credits_remaining"] = user.credits
         return jsonify(result_dict)
 
     return jsonify({"error": "Invalid task type"}), 400
 
 @app.route("/api/exercise/grade", methods=["POST"])
 def grade_exercise():
+    user = User.query.first()
     data = request.json or {}
     question = data.get("question")
     user_answer = data.get("user_answer")
+    
+    if user.credits < 1:
+        return jsonify({"error": "Insufficient credits."}), 402
+
     try:
         result = exercise_grader.grade(question, user_answer)
         result_dict = result.model_dump()
+        
+        user.credits -= 1
         save_submission(
             "exercise", 
             question.get("instruction") + "\n" + question.get("stimulus"), 
@@ -159,27 +185,33 @@ def grade_exercise():
         )
         result_dict["question"] = question
         result_dict["user_answer"] = user_answer
+        result_dict["credits_remaining"] = user.credits
         return jsonify(result_dict)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 @app.route("/api/user/stats", methods=["GET"])
 def get_user_stats():
-    # Avg band score
+    user = User.query.first()
     avg_score = db.session.query(func.avg(Submission.overall_band_score)).filter(Submission.task_type.in_(['task1', 'task2'])).scalar() or 0
     total_tasks = Submission.query.count()
     
     return jsonify({
         "avg_band": round(float(avg_score), 2),
         "total_tasks": total_tasks,
-        "growth": "+0.5" # Mock for now
+        "credits": user.credits,
+        "growth": "+0.5" 
     })
+
+@app.route("/api/user/credits", methods=["GET"])
+def get_credits():
+    user = User.query.first()
+    return jsonify({"credits": user.credits})
 
 @app.route("/api/user/activity", methods=["GET"])
 def get_activity():
-    # Group submissions by date
     results = db.session.query(func.date(Submission.created_at), func.count(Submission.id)).group_by(func.date(Submission.created_at)).all()
-    return jsonify({date_str: count for date_str, count in results})
+    return jsonify({str(date_val): count for date_val, count in results})
 
 @app.route("/api/user/history", methods=["GET"])
 def get_history():
@@ -197,7 +229,6 @@ def manage_vault():
     user = User.query.first()
     if request.method == "POST":
         data = request.json
-        # Prevent exact duplicates
         exists = VaultItem.query.filter_by(user_id=user.id, before=data.get("before"), after=data.get("after")).first()
         if not exists:
             item = VaultItem(
@@ -230,7 +261,6 @@ def delete_vault_item(item_id):
 
 @app.route("/api/practice", methods=["POST"])
 def generate_practice():
-    # Keeping existing logic
     data = request.json or {}
     practice_type = data.get("type")
     prompt = f"Generate a unique IELTS Short Practice task. Type: {practice_type or 'Random'}"
@@ -251,6 +281,7 @@ def generate_exercise():
         return jsonify({"error": str(e)}), 500
 
 def _fallback_grade(task_type, prompt_text, user_response, image_context):
+    user = User.query.first()
     prompt_path = os.path.join(os.path.dirname(__file__), "../data/prompt.md")
     with open(prompt_path, "r") as f:
         prompt_template = f.read()
@@ -262,10 +293,12 @@ def _fallback_grade(task_type, prompt_text, user_response, image_context):
         config=types.GenerateContentConfig(response_mime_type="application/json", response_schema=GradingResponse)
     )
     result_dict = json.loads(response.text)
+    user.credits -= (3 if task_type == "task1" else 5)
     save_submission(task_type, prompt_text, user_response, result_dict)
     result_dict["prompt_text"] = prompt_text
     result_dict["user_response"] = user_response
     result_dict["task_type"] = task_type
+    result_dict["credits_remaining"] = user.credits
     return jsonify(result_dict)
 
 if __name__ == "__main__":

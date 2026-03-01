@@ -7,3 +7,4 @@ requests
 dotenv
 google-genai
 flask-sqlalchemy
+psycopg2-binary
