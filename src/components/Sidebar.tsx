@@ -15,7 +15,11 @@ import {
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "./AuthProvider";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
+console.log("Current API_URL:", API_URL);
+
 export default function Sidebar() {
+
   const pathname = usePathname();
   const router = useRouter();
   const { user } = useAuth();
@@ -29,7 +33,7 @@ export default function Sidebar() {
       const token = session?.access_token;
       if (!token) return;
       
-      const res = await fetch("http://localhost:5001/api/user/credits", {
+      const res = await fetch(`${API_URL}/api/user/credits`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }

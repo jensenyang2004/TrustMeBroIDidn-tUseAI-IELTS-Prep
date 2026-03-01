@@ -50,7 +50,7 @@ export async function analyzeTask1Image(imageFile: File): Promise<{ description:
   const formData = new FormData();
   formData.append("image", imageFile);
 
-  const response = await fetch("http://localhost:5001/api/task1/analyze", {
+  const response = await fetch(`${API_URL}/api/task1/analyze`, {
     method: "POST",
     body: formData,
   });
