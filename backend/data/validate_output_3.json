@@ -1,0 +1,505 @@
+{
+  "summary": {
+    "samples_evaluated": 15,
+    "n_samples": 100,
+    "average_mae": 0.9,
+    "failed_indices": []
+  },
+  "records": [
+    {
+      "input": {
+        "index": 0,
+        "task": "Some countries achieve international sports by building specialised facilities to train top athletes, instead of providing sports facilities that everyone can use. Do you think this is positive or negative development?Discuss both views and give your opinion.",
+        "essay_text": "International sports events require the most well-trained athletes for each country, in order to achieve this goal countries make an effort to build infrastructure designed to train top athletes. Although this policy can indeed make fewer sports facilities for ordinary people, investing in the best athletes is vital to develop competitive sports performances in each country.\nOn the one hand, building specific infrastructure for the best athletes is crucial in order to get better results at international sports events such as The Olympics or the World Cup. The importance of getting better results is that it creates awareness of the importance of sports in society and motivates more people to do a sport. In this way, investing in these developments can help countries to develop an integral sport policy that can benefit everyone.\nOn the other hand, one can argue that a negative effect could be that less infrastructure is built for the rest of the people. However, people who practice a sport in their daily life do not necessarily need some facilities to do sports. For example, people often use public spaces to do sports such as running or doing yoga at the nearest park to their home. So, for people who is not top athletes there could be some alternatives for sports facility that ,is not the case for training top athletes.\nTo sum up, I strongly believe countries should invest in specialised infrastructure for their best athletes because in the long term is going to generate more motivation to do sports, to invest in sports at schools and therefore to build more sports infrastructure for everyone.",
+        "actual_band": 9.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay addresses all parts of the task. It discusses the elite training perspective in detail and acknowledges the general public facilities perspective, albeit primarily as a counter-argument. A clear opinion is maintained throughout. Coherence is high with logical paragraphing and clear transitional phrases. The vocabulary is a strong point, with topic-specific terms like 'infrastructure', 'integral sport policy', and 'specialised facilities'. Grammatical range is good, employing complex structures (although, because, in order to), though some persistent errors (subject-verb agreement 'people who is' and punctuation/slips like 'facility that ,is') are present. Following the calibration guidelines to not over-penalize minor errors and recognize sophistication, the essay achieves a Band 7 level.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the prompt. A clear position is established in the introduction and reinforced in the conclusion. Both views are discussed: the benefits of elite facilities are explored, and the impact on public facilities is addressed via a counter-argument. Ideas are extended, though the discussion of public facilities could be slightly more balanced to reach higher bands."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information is organized logically with a clear progression from the introduction to the body and conclusion. Cohesive devices such as 'On the one hand', 'However', and 'To sum up' are used effectively to guide the reader. Paragraphing is appropriate and supports the flow of the argument."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The vocabulary is sufficient to allow for some precision and flexibility. Terms like 'infrastructure', 'specialised', 'competitive sports performances', and 'integral sport policy' show an awareness of style and collocation. There are minor slips (e.g., 'achieve international sports' missing a noun like 'success'), but they do not detract from clarity."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "The candidate uses a variety of complex structures with reasonable accuracy. Frequent error-free sentences are present. While there are a few persistent errors (e.g., subject-verb agreement 'people who is' and minor punctuation slips), they do not impede communication, and the overall range is characteristic of Band 7."
+          },
+          "final_comment": "This is a solid Band 7.0 performance. The candidate presents a well-structured argument with strong lexical choices. To improve, the candidate should ensure that both sides of the 'discuss both views' prompt are explored with equal depth, perhaps by elaborating on the societal benefits of public facilities before countering. Additionally, proofreading for basic subject-verb agreement would further solidify the grammatical score.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 2.0
+      }
+    },
+    {
+      "input": {
+        "index": 1,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "There is currently a material issue that while the majority of students are eager to learn business or art in university, there are only a few students who want to study science, leading to numerous negative effects on community. With respect to this matter, there are also a wide variety of factors that influence the decision of students to not study science subjects.\nIt is undeniable that there are many reasons why undergraduates avoid studying science. A classic example of this is that science is extremely difficult to understand. In order to fully comprehend a particular scientific phenomenon, students have to learn complex theories that cause the phenomena. Therefore, they tend to choose other subjects that are easier to understand. Another common reason is a small amount of salary for working in scientific fields. When student choose subjects to study at university, they tend to enroll in an area that they could make a lot of money from having that knowledge. Since science career does not offer high remuneration, student possibly prefer to study other subjects such as business which offers higher salary instead.\nIt is true that there are many negative consequences on society of having less undergraduates studying science. One clear impact of this is the decreasing in innovation. This is because scientific comprehension is a mandatory requirement for creating an innovation. Hence, having only a few people who understand science will inevitably hold the creation of modern innovation. Furthermore, the current environmental crisis, such as an increase in global temperature, would perhaps reach a point of no return. Since the crisis relates to environment which is one of scientific aspects, having a small number of attention from students would lead to less social pressure to address this crisis properly.\nIn conclusion, it is the fact that science is complicated and people who have scientific knowledge can make less money than those who are expertise in other areas, resulting in less popularity in learning about science for university students. Moreover, with the rise in this problem, this trend possibly suspends the creation of new innovation and deteriorate the current environmental issues, which are two most crucial matters for society.",
+        "actual_band": 8.5
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay was evaluated based on the four IELTS criteria. Task Response was rated 8.0 as it sufficiently addresses both reasons and effects with well-extended arguments. Coherence and Cohesion was rated 8.0 due to the logical sequencing and ease of reading. Lexical Resource was rated 7.0; while it uses sophisticated terms like 'remuneration', it has some minor collocation errors. Grammatical Range and Accuracy was rated 7.0 because it uses complex structures frequently and accurately enough that minor, persistent errors in subject-verb agreement and pluralization do not impede communication.",
+          "task_fulfillment": {
+            "score": 8.0,
+            "comment": "The prompt is appropriately and sufficiently addressed. The candidate provides a clear, well-developed position, identifying two distinct reasons (difficulty and remuneration) and two distinct effects (innovation and environment). Ideas are well-extended and relevant throughout the response."
+          },
+          "coherence_and_cohesion": {
+            "score": 8.0,
+            "comment": "The message is followed with ease. Information and ideas are logically sequenced with a clear progression from the introduction through the body paragraphs to the conclusion. Cohesion is well-managed through the effective use of linking words such as 'Therefore', 'Furthermore', and 'Hence'."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The resource is sufficient to allow some flexibility and precision. The candidate successfully uses less common and sophisticated items such as 'remuneration', 'mandatory requirement', and 'phenomenon'. There are occasional inaccuracies in word choice or collocation, such as 'small amount of salary' (low salary) and 'expertise in other areas' used as a noun for people, but these do not detract from clarity."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "A variety of complex structures are used with some flexibility. Sentences often involve subordinate clauses and conditional logic. While there are several persistent errors (e.g., subject-verb agreement in 'student choose' and pluralization in 'less undergraduates'), they are non-systematic in a way that would block meaning, and error-free sentences are frequent."
+          },
+          "final_comment": "This is a strong response that demonstrates a clear understanding of the task. The candidate's ability to organize ideas logically and use high-level vocabulary is a significant strength. To improve, the candidate should focus on grammatical precision, particularly subject-verb agreement and the correct use of count/uncount nouns (e.g., 'fewer' instead of 'less' for undergraduates). Additionally, refining collocations (e.g., 'high/low salary' instead of 'small amount') would further enhance the lexical score.",
+          "overall_band_score": 7.5
+        },
+        "predicted_band": 7.5,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 2,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "In recent years, many countries have reported a decrease in the number of students choosing science subjects in universities. This is a concerning trend that can have a profound impact on society. In this essay, I will discuss the reasons behind this problem and its implications.\nThe first reason for fewer students selecting science subjects is likely that these courses are difficult to comprehend. In general, science courses such as mathematics and physics involve complex theories, formulas, and concepts that require a great deal of hard work to understand. Furthermore, they are often taught in a theoretical manner and fail to show students how this knowledge can be used in real life. In other words, it may seem impractical for them to learn science courses. Lastly, it may be hard to acquire a practical job through these theoretical subjects in the future. As a result, students may give up studying science because they find scientific studies unappealing, impractical, and not promising for their future careers.\nConsequently, the lack of students studying science subjects can have a significant impact on society. First and foremost, there may not be enough qualified scientists and teachers to teach the theoretical foundation of technology, medicine, and engineering. This could lead to slow progress in these areas, and society may suffer as a result. Moreover, the decline in the number of science students could lead to a shortage of scientists for research and development in industry, which would have a negative impact on the nation's economy.\nTo sum up, the decreasing number of students selecting science courses in universities is a worrying phenomenon. The main reasons for this are the difficulty of science courses and the lack of job opportunities in science after studies. This could have a negative impact on society, as there may not be enough qualified scientists to pursue research, and this could impede progress in fields such as technology and medicine.",
+        "actual_band": 8.5
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay is a high-quality response that addresses all parts of the prompt with significant clarity and accuracy. The Task Response is strong (Band 8) as it provides multiple relevant reasons and effects, well-extended with logical support. Coherence and Cohesion (Band 7) is maintained through a clear four-paragraph structure and logical progression, though the transition markers (First, Furthermore, Lastly) are slightly formulaic. Lexical Resource (Band 7.5) is marked by very high accuracy and appropriate academic collocations like 'profound impact' and 'worrying phenomenon.' Grammatical Range and Accuracy (Band 8) is a standout feature, as the writing is almost entirely error-free with a good variety of complex structures.",
+          "task_fulfillment": {
+            "score": 8.0,
+            "comment": "The prompt is appropriately and sufficiently addressed. The writer presents a clear and well-developed position, identifying both reasons (difficulty of subjects, lack of practical application, career concerns) and effects (shortage of experts, economic impact). Ideas are well-extended and supported without unnecessary digression."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information and ideas are logically organized, and there is a clear progression throughout the response. Paragraphing is used effectively, with each paragraph focusing on a clear central topic. Cohesive devices are used accurately, though they are somewhat mechanical (e.g., 'The first reason,' 'Furthermore,' 'Lastly,' 'Moreover'), which limits the score to Band 7."
+          },
+          "lexical_resource": {
+            "score": 7.5,
+            "comment": "The vocabulary is sufficient to allow for flexibility and precision. The candidate uses academic items such as 'phenomenon,' 'implications,' 'comprehend,' and 'impede' correctly. Collocations are strong ('profound impact,' 'theoretical foundation'). The text is entirely free of spelling and word formation errors, showing great control."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 8.0,
+            "comment": "The candidate uses a wide range of structures with high accuracy. The majority of sentences are error-free, including complex constructions such as relative clauses, passive voice, and conditional-style projections. Punctuation is well-managed throughout."
+          },
+          "final_comment": "This is a very strong performance. The candidate demonstrates a high level of grammatical precision and a clear ability to organize complex ideas. To improve, the writer should focus on using more sophisticated and varied cohesive devices to move beyond a formulaic 'list' structure, and incorporate a broader range of less common vocabulary to reach the highest bands.",
+          "overall_band_score": 7.5
+        },
+        "predicted_band": 7.5,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 3,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "It is a serious problem that there is an inadequate number of students who tend to select science as their major subject in universities in many countries. In my view, students may think that studying science has not a good career path. Also, this issue may deeply affect the international state of a country.\nThe main reason why people do not think to study science is that they may see science as something unpractical, and potentially, they are hard to find a job when they graduate. Students are generally afraid that there is no employment opportunity after they graduate from university. Unlike engineering and business management, in which fields employers provide plenty of vocational positions for graduated students because there are lots of companies activating in these fields and universities may provide some practical training courses and internships. Students studying science have a relatively narrow way to walk, and may just be scientists. Moreover, although a successful scientist can get a massive bonus from some prizes, it is too hard to accomplish and is more likely to fail. Therefore, Students will avoid taking those risks and choose other subjects that are relatively stable and easy to find a job.\nThis trend will eventually decrease the state of a country. Developing science can provide a strong and firm foundation for a country to establish a healthy and prosperous community. If there are not enough scientists, the whole scientific ability will decrease. Not only will the government pay extra money to other foreign countries to buy the required technology such as military equipment, but the public needs to spend more time and pay more effort to maintain the international standard production rate of a country. It is extremely dangerous that a nation easily suffers from a financial crisis and, finally, it influences the living standard of its citizens and causes damage to its financial systems.\nIn summary, while science is regarded as a \"useless\" subject because of its narrow career path and low success rate, it is vital that the economic systems would be affected if a country develop without scientists.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The candidate addresses both parts of the prompt (reasons and effects) with clear, relevant ideas. The structure is logical, moving from an introduction to reasons, then effects, and a conclusion. Vocabulary is sufficient to convey precise meanings, with some less common items like 'vocational positions' and 'prosperous community,' though some collocations are slightly awkward. Grammatically, there is a mix of simple and complex sentences. While there are several error-free sentences, persistent minor errors in subject-verb agreement and phrasing limit the score in that domain. Following the calibration guidelines, the overall profile is consistent with a Band 7.0.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate appropriately addresses all parts of the task. A clear position is maintained throughout the essay. The reasons (lack of career path, risk of failure) and effects (national decline, economic strain) are well-developed and supported, although some arguments regarding financial crises are slightly over-generalized."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information is logically organized with a clear progression from the causes of the problem to its societal effects. Cohesive devices such as 'Unlike,' 'Moreover,' and 'Therefore' are used effectively to link ideas. Paragraphing is appropriate, and each paragraph has a clear central topic."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The range of vocabulary is sufficient for the task and allows for some precision (e.g., 'inadequate number,' 'vocational positions,' 'prosperous community'). There are some instances of awkward collocation or word choice (e.g., 'narrow way to walk,' 'companies activating,' 'unpractical'), but these do not impede communication."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.5,
+            "comment": "The candidate uses a mix of simple and complex sentence forms, including successful use of relative clauses and conditional structures. However, frequent small errors occur, such as 'they are hard to find a job' (instead of 'it is hard for them to find'), subject-verb agreement ('if a country develop'), and minor issues with parallelism in 'not only... but' structures."
+          },
+          "final_comment": "The response is a well-structured and clear piece of writing that effectively addresses the prompt. To improve, the candidate should focus on refining collocations and ensuring grammatical accuracy in complex structures, particularly subject-verb agreement and the correct use of dummy subjects ('It is hard' vs 'They are hard').",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 0.0
+      }
+    },
+    {
+      "input": {
+        "index": 4,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "It is a serious problem that there is an inadequate number of students who tend to select science as their major subject in universities in many countries. In my view, students may think that studying science has not a good career path. Also, this issue may deeply affect the international state of a country.\nThe main reason why people do not think to study science is that they may see science as something unpractical, and potentially, they are hard to find a job when they graduate. Students are generally afraid that there is no employment opportunity after they graduate from university. Unlike engineering and business management, in which fields employers provide plenty of vocational positions for graduated students because there are lots of companies activating in these fields and universities may provide some practical training courses and internships. Students studying science have a relatively narrow way to walk, and may just be scientists. Moreover, although a successful scientist can get a massive bonus from some prizes, it is too hard to accomplish and is more likely to fail. Therefore, Students will avoid taking those risks and choose other subjects that are relatively stable and easy to find a job.\nThis trend will eventually decrease the state of a country. Developing science can provide a strong and firm foundation for a country to establish a healthy and prosperous community. If there are not enough scientists, the whole scientific ability will decrease. Not only will the government pay extra money to other foreign countries to buy the required technology such as military equipment, but the public needs to spend more time and pay more effort to maintain the international standard production rate of a country. It is extremely dangerous that a nation easily suffers from a financial crisis and, finally, it influences the living standard of its citizens and causes damage to its financial systems.\nIn summary, while science is regarded as a \"useless\" subject because of its narrow career path and low success rate, it is vital that the economic systems would be affected if a country develop without scientists.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The candidate addresses all parts of the prompt, providing distinct reasons (career paths, perceived difficulty) and effects (national economy, dependence on foreign tech). The response is well-structured with clear paragraphing. Cohesion is generally strong, though some transitions are slightly mechanical. Lexical resource is a strong point, with terms like 'vocational positions' and 'prosperous community,' though some collocations like 'pay more effort' are slightly off. Grammatical range includes complex structures (inversions, conditionals), though there are frequent minor slips in subject-verb agreement and phrasing that do not impede communication. Following the calibration guidelines, the overall profile is consistent with a Band 7.0.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate appropriately addresses all parts of the prompt. A clear position is maintained throughout, distinguishing between why students avoid science (perceived career risks) and the consequences for society (economic and technological decline). Ideas are extended and supported, though some arguments (like the distinction between science and engineering) could be more precise."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information is logically organized with a clear progression from the introduction to the conclusion. Paragraphing is effective, with each body paragraph focusing on a specific aspect of the prompt. Cohesive devices are used appropriately, although some transitions (e.g., 'Also', 'Moreover') are used somewhat mechanically."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The resource is sufficient to allow for some flexibility and precision. The candidate uses less common items such as 'vocational positions', 'prosperous community', and 'financial crisis'. While there are some awkward collocations ('narrow way to walk', 'pay more effort', 'companies activating'), they do not detract from the overall clarity of the message."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.5,
+            "comment": "The candidate uses a mix of simple and complex sentence forms, including conditionals and 'Not only... but also' inversions. However, accuracy is inconsistent in complex structures. Frequent minor errors occur, such as subject-verb agreement ('if a country develop') and awkward phrasing ('has not a good career path'), but these rarely impede communication."
+          },
+          "final_comment": "The candidate has produced a solid Band 7.0 essay. The response is well-organized and addresses the prompt fully. To improve, the candidate should focus on refining grammatical accuracy in complex structures (especially subject-verb agreement) and polishing collocations to sound more natural. The development of ideas is strong, but more specific examples would help elevate the score further.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 0.0
+      }
+    },
+    {
+      "input": {
+        "index": 5,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "In recent time, it is observed that the number of students enrolling for Science or Mathematics in higher education is decreasing all over the world. There are plenty of reasons that are causing this decline which will affect the society negatively. In this essay, I will discuss why the number of pupils is deacreasing who prefer science stream and what will be the impacts on a community if it continues.\nThe main reason of this situation is lack of trained science and mathematics teachers. STEM teachers are not able to kindle the joy of learning among students. If students do not get proper foundation and motivation in their school life to pursue STEM subjects, they will develop Math or Science phobia. Subsequently, they will rather prefer other streams to complete their higher education.\nEventually, this situation will impact the scociety in many ways. Firstly, there would be scarcity of doctors all over the world which will affect health sector dramatically. Eventually, people will suffer with many health problems. Secondly, if students do not take STEM subjects in university, there will not be STEM teachers to teach future generation. According to me, government must take firm steps to avoid these situations in future. There must be some training program to keep STEM teachers up to date to enhance their teaching. This will enable teachers to make science subjects enjoyable for students, for instance, teachers may incorporate technology in the learning process.\nTo conclude, I believe that government and teachers should take the resposibility to create the conducive environment to learn these subjects in fun way. This will, eventually, increase the number of students enrolling for STEM subjects in recent future. Otherwise, it may have negative impacts on society which will not be a good sign for any country.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay addresses both parts of the prompt: the reasons for the decline in STEM enrollment and the subsequent effects on society. The position is clear and maintained throughout. The organization is logical with clear paragraphing and appropriate use of cohesive devices. Lexically, the candidate uses some sophisticated phrases like 'kindle the joy of learning' and 'conducive environment,' although there are a few spelling errors. Grammatically, there is a good mix of complex sentences with frequent error-free segments, meeting the criteria for Band 7 across all domains.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The prompt is appropriately addressed. The candidate identifies a clear reason (teacher quality/motivation) and clear effects (health sector issues and lack of future educators). The position is clear throughout the response. While the second body paragraph shifts into recommendations/solutions which were not explicitly asked for, the main ideas regarding effects are still present and supported."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information is logically organized with a clear progression from introduction to causes, then effects, and finally a conclusion. Cohesive devices such as 'Subsequently,' 'Eventually,' and 'Firstly' are used effectively to link ideas. Paragraphing is used appropriately to separate different aspects of the response."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The candidate demonstrates a sufficient range of vocabulary to allow for some precision, using terms like 'enrolling,' 'decline,' 'kindle the joy,' and 'conducive environment.' There are a few spelling errors ('deacreasing', 'scociety', 'resposibility'), but they do not detract from overall clarity or impede communication."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "A variety of complex structures are used, including conditional sentences ('If students do not get... they will...') and passive voice ('it is observed that'). Grammar and punctuation are generally well-controlled, and error-free sentences are frequent. Minor slips, such as 'suffer with' instead of 'suffer from' or awkward word order in 'number of pupils is deacreasing who prefer,' are present but non-systematic."
+          },
+          "final_comment": "This is a strong Band 7.0 performance. The candidate shows a good command of English with clear argumentation and sophisticated vocabulary. To improve, the candidate should ensure they focus more deeply on the specific questions asked (e.g., expanding more on the 'effects' rather than pivoting to 'solutions') and double-check spelling for common academic words.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 0.0
+      }
+    },
+    {
+      "input": {
+        "index": 6,
+        "task": "The best way to teach children to cooperate is through team sports at school. To what extent do you agree or disagree?",
+        "essay_text": "These days it is firmly believed that the most efficient method to teach children in schools how to work together is through team sports. This essay disagrees with the statement since some young students might not enjoy playing sports and because team sports can raise competitiveness amongst children, hence having a negative impact on their friendly relationships.\nFirst of all, although it is vital for a children to play sports and keep fit, not everyone is keen on football, rugby and volleyball. Instead, some young students prefer spending their leisure time on other activities such as joining a chorus group or teathre lessons. These activities can encourage cooperation and make children get along with each other, as well. On the other hand, forcing children to play something they doesn't feel comfortable in can make them withdraw from the team game, which would make them feel excluded.\nIn addition, teams sports do not always promote cooperation among players. In some cases, inequities or particularly ambitious behaviours can lead to violent competitiveness, instead. It is generally thought that sport is an extremely selective environment, in fact you need to exercise daily in order to keep fit. If obese children took part in those team sports as well, they could feel isolated because they do not own the perfect body to perform well.\nIn conclusion, although team sports are a great method to teach children how to get along with each other, there are various activities which can encourage cooperation among children, as well. Therefore, it is considerably significant for a school to embrace diversity and make children play with what they really like, instead of forcing them to do something they feel they don't belong.",
+        "actual_band": 8.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay provides a clear disagreement with the prompt, arguing that sports are not the 'best' way due to personal preference and potential negative outcomes like competitiveness and exclusion. The candidate suggests alternatives (theatre/choir), effectively addressing the 'best way' superlative in the prompt. Organization is logical with clear paragraphing and transitions. Vocabulary is sophisticated in places ('selective environment', 'embrace diversity'), though minor spelling and grammar slips occur. These errors do not impede communication, fitting the Band 7 criteria across all domains.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the prompt and maintains a clear position throughout the response. The main ideas (alternative activities and the downsides of sports) are relevant and extended. While the arguments are well-developed, some points, such as the specific mention of 'obese children', could have been framed with more precision to avoid slight over-generalization, but the overall task response is strong."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information is logically organized with a clear progression from the introduction to the conclusion. The use of cohesive devices like 'First of all', 'Instead', and 'In addition' helps guide the reader. Paragraphing is effective, with each paragraph focusing on a central topic. Minor lapses in internal cohesion occur, but they do not disrupt the flow of the message."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The candidate uses a sufficient range of vocabulary to allow for flexibility and precision. Examples of less common or sophisticated items include 'inequities', 'selective environment', and 'embrace diversity'. There are minor errors, such as the spelling of 'teathre' and the slightly awkward 'own the perfect body', but these do not detract from the overall clarity of the essay."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "The essay demonstrates a variety of complex structures, particularly in the use of conditional and subordinating clauses. Grammar and punctuation are generally well-controlled. Although there are a few persistent errors (e.g., 'a children', 'they doesn't'), error-free sentences are frequent and the mistakes do not impede the reader's understanding."
+          },
+          "final_comment": "This is a well-written response that effectively argues against the prompt's premise. The candidate shows a good command of both vocabulary and sentence structure. To improve, the candidate should focus on eliminating recurring minor grammatical slips (such as subject-verb agreement) and ensuring that supporting examples are as precise as possible.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 7,
+        "task": "The best way to teach children to cooperate is through team sports at school. To what extent do you agree or disagree?",
+        "essay_text": "Many people believe that the most effective way to teach children cooperation in teamwork is by encouraging them to join team sports at school. I completely agree with this idea and will give my reasons as follows.\nFirstly, team sports require children to work together and practice communication in order to achieve a common goal. For example, in Taiwan, many schools have baseball lessons in sports courses, and some schools even have a school baseball team. In such courses, children can learn to trust one another and develop communication skills by playing. Furthermore, they can develop mutual understanding and compromise with their teammates in order to reach a common goal. In this way, they can develop their social skills, find a way to cooperate, and build positive relationships with their peers. As a result, team sports experiences will contribute to their social skills and social life as well.\nSecondly, team sports can teach children the value of perseverance and resilience. Through the experience of competing with other teams, children can learn to accept the ups and downs of success and defeat and go through any difficult situations with their teammates. This is especially the case if they fail in a competition as they can learn to encourage each other and develop a sense of group belonging. For instance, we can see many touching stories in team competitions where despite being on the losing side at the beginning, the team rallies, and members encourage each other to restart. This can be a great lesson for children to build their resilience, self-confidence, and a sense of belonging, as well as develop a positive attitude toward their life in the future.\nIn conclusion, I believe that team sports provide children with opportunities to develop their social skills, increase their confidence and resilience, and ultimately benefit their whole life. Therefore, they should be included in the school curriculum for children.",
+        "actual_band": 9.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay is highly coherent and demonstrates a high level of grammatical accuracy. The candidate addresses the prompt directly with a clear position. In Task Response, while the ideas are well-extended, the second body paragraph shifts focus slightly towards individual character traits like 'resilience' and 'confidence' rather than strictly the mechanics of 'cooperation,' which aligns with a Band 7 descriptor for 'lack of focus.' Coherence and Cohesion is a strong point, with logical sequencing and a smooth flow of ideas. Lexical Resource is sufficient and precise with some less common items like 'resilience' and 'mutual understanding,' but lacks the wide, flexible range required for Band 8. Grammatical Range and Accuracy is excellent, with a majority of sentences being error-free and a good variety of complex structures used correctly.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the prompt and maintains a clear position throughout. The main ideas are relevant and supported with specific examples (e.g., baseball in Taiwan). However, there is a slight tendency to lose focus in the second body paragraph, where the discussion shifts from the act of cooperation to the development of personal resilience and self-confidence, though these are linked to the team context."
+          },
+          "coherence_and_cohesion": {
+            "score": 8.0,
+            "comment": "The message is followed with ease. Information and ideas are logically sequenced with a clear progression from the introduction to the conclusion. Cohesive devices such as 'Furthermore,' 'In this way,' and 'This is especially the case' are used naturally and effectively to link ideas. Paragraphing is used appropriately and supports the overall organization."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The range of vocabulary is sufficient to allow for some flexibility and precision. The candidate uses topic-specific language effectively ('mutual understanding', 'common goal', 'perseverance', 'group belonging'). There are very few, if any, errors in spelling or word formation, though the range remains somewhat standard for the topic rather than sophisticated."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 8.0,
+            "comment": "A wide range of structures is used with a high degree of accuracy. The majority of sentences are error-free. The candidate successfully employs complex sentence forms, such as 'despite being on the losing side... the team rallies,' and manages punctuation well throughout the response."
+          },
+          "final_comment": "This is a very strong response characterized by its clarity and grammatical precision. The candidate communicates their ideas effectively with almost no errors. To improve, the writer could ensure that every supporting point remains strictly focused on the core theme (cooperation) and attempt to use a wider, more sophisticated range of vocabulary and idiomatic expressions to reach the highest bands.",
+          "overall_band_score": 7.5
+        },
+        "predicted_band": 7.5,
+        "loss": 1.5
+      }
+    },
+    {
+      "input": {
+        "index": 8,
+        "task": "The best way to teach children to cooperate is through team sports at school. To what extent do you agree or disagree?",
+        "essay_text": "The ability to associate at school has been a great concern. Owing to this, some assume that the optimal way to boost children's collaborative spirit is through school team sports. In my opinion, teaming up in school sports would be problematic, and therefore, should be implemented in certain occasions, with certain individuals.\nInitially, participating in team sports would put a tremendous risk in injuries. Inevitably, physical group activities require high-speed movements, resulting in harsh collisions. Students then may lose their interest in those activities, or hesitate to attend in order to avoid any kind of damage to their body.\nAnother point to consider is that joining team sports can effortlessly breed serious competition among teammates. Therefore, at that time, the objective of cultivating cooperation would be replaced by the desire for accolades in children's mind. This consequently spells trouble for the hostile environment as the feeling of inadequacy and low sellf-esteem in students are growing.\nFinally, the best solution would be offering team sports as an optional project for students. To illustrate, a school football match can open more opportunities for those into soccer and accept to play in unity. In this case, participants may have a chance to immerse themselves in a joint effort after being thoroughly disseminated about the rules. As a result, they are still able to enjoy the game while working in a joint project.\nIn conclusion, boosting children association by teamsports may not be feasible for all of them, but operating more joint projects for those with passion and fair play is a much better approach.",
+        "actual_band": 7.5
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The candidate provides a nuanced response to the prompt, arguing that while team sports can foster cooperation, they also present risks like injury and excessive competition. This directly addresses the 'to what extent' part of the question. The structure is logical, moving from negative aspects to a suggested solution (optional participation). Cohesion is maintained through a variety of linking words, though some are slightly formulaic. Lexical resource is a strong point, with sophisticated terms like 'collaborative spirit', 'desire for accolades', and 'hostile environment'. Grammatical control is generally high, with a mix of complex structures and frequent error-free sentences, though minor prepositional and spelling errors exist. Under the provided calibration guidelines, the essay consistently meets the 'Band 7' descriptors across all categories as the errors do not impede communication and the vocabulary is above a basic level.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the prompt and presents a clear position throughout the response. The ideas regarding injury and competition are well-extended and support the argument that team sports are not necessarily the 'best' way for everyone. To reach a higher band, the candidate could have more explicitly compared team sports to other potential methods of teaching cooperation."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information and ideas are logically organized with a clear overall progression from the introduction to the conclusion. Cohesive devices like 'Initially', 'Another point to consider', and 'In this case' are used effectively, though they occasionally feel a bit mechanical. Paragraphing is used appropriately to separate distinct ideas."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The candidate uses a sufficient range of vocabulary to allow for some flexibility and precision. Examples of less common lexical items include 'collaborative spirit', 'accolades', and 'immersed'. There are a few minor errors in word choice (e.g., 'boosting children association', 'disseminated about the rules') and a spelling error ('sellf-esteem'), but these do not detract from clarity."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "A variety of complex structures are used with reasonable accuracy. The majority of sentences are error-free. There are minor, non-systematic errors, such as 'risk in injuries' (instead of 'of') and 'into soccer' (which is slightly informal), but these do not impede communication at any point."
+          },
+          "final_comment": "This is a well-written essay that effectively argues a nuanced position. The candidate demonstrates a strong command of vocabulary and a solid grasp of complex grammatical structures. To improve, the candidate should aim for more natural cohesion by relying less on standard transition words and focus on ensuring all collocations (e.g., 'risk of' instead of 'risk in') are precise.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 0.5
+      }
+    },
+    {
+      "input": {
+        "index": 9,
+        "task": "The best way to teach children to cooperate is through team sports at school. To what extent do you agree or disagree?",
+        "essay_text": "There is currently a contentious argument that the most effective method for young people to learn about cooperation is by doing team sports, rather than other alternatives. Despite the fact that doing sports as a team could inarguably strengthen collaboration skills of children, I personally believe that there are also other vital ways to upskill them in this aspect.\nIt is true that doing team sports could possibly lead to the collaboration of children. A classic example of this is that they have to jointly cooperate with other team members in order to achieve the team’s goal. This is because reaching the goal in team sports requires each member to not only do their responsibility, but also to help other members to maximize the performance of the team. In addition, supporters of doing team sports may argue that children will also learn to communicate with other members, which is one of key factors for cooperation. As a result, when young people have better communication skills, they tend to be willing to collaborate with other people in any situation.\nIn spite of the aforementioned positive effects on juveniles with respect to the cooperation, the juveniles could also be encouraged to cooperate by working in a group as another alternative way. A common example of this is they have to think from other perspectives, which is an essential skill for collaboration. When juveniles work with other people, they would inevitably encounter with a wide variety of ideas which they might disagree with. Therefore, they have to understand the ideas from the others’ point of view in order to reach a consensus. Furthermore, another key point for cooperation that adolescents will learn is delegation. This is because tasks that a group has to complete might requires various knowledge. Hence, adolescents have to delegate each task to each group member based on the expertise.\nIn conclusion, it is undeniable that doing team sport will positively result in the collaboration of children since they would get exposed to situations, requiring them to help and communicate with other team members. Nevertheless, I totally disagree with the notion that team sport is the best way to teach children to collaborate since doing assignment in a group could also teach and motivate them to cooperate with other people in terms of thinking from other points of view and work delegation.",
+        "actual_band": 8.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay addresses both the effectiveness of team sports and provides a valid alternative (group work) to challenge the 'best way' premise of the prompt. The position is clear and maintained throughout. Organization follows a logical sequence with appropriate paragraphing. Lexical resource includes higher-level terms like 'delegation', 'consensus', and 'expertise', though there are some minor collocations and word-form errors. Grammatical range is good, with a mix of complex structures; minor errors (e.g., 'might requires') do not impede communication, fitting the Band 7 descriptor.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the prompt. A clear position is established in the introduction and reinforced in the conclusion. The candidate successfully argues that while sports are beneficial, other methods like academic group work are also effective, thereby addressing the 'best way' aspect of the question. Ideas are generally well-extended, though the comparison between the two methods could be slightly more precise."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "The response is logically organized with a clear progression from the introduction to the body paragraphs and the final summary. Each paragraph has a clear central topic. Cohesive devices such as 'In addition', 'Furthermore', and 'Nevertheless' are used effectively, although some transitions feel a bit mechanical or formulaic ('A classic example of this is')."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The range of vocabulary is sufficient to show some flexibility and precision. Terms like 'contentious argument', 'delegation', 'consensus', and 'expertise' demonstrate an ability to use less common items. There are minor inaccuracies in word choice and occasional awkward phrasing (e.g., 'strengthen collaboration skills of children'), but these do not detract from the overall clarity."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "The candidate uses a variety of complex sentence structures with reasonable control. Frequent error-free sentences are present. Minor errors occur, such as subject-verb agreement ('tasks... might requires') and missing plural markers ('doing assignment'), but these are non-systematic and do not hinder the reader's understanding."
+          },
+          "final_comment": "The essay is a solid Band 7 performance. It demonstrates a clear understanding of the task and presents a balanced argument. To improve, the candidate should focus on refining collocations and ensuring perfect subject-verb agreement. Additionally, making the link between the examples and the 'best way' argument more explicit would strengthen the Task Response.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 10,
+        "task": "While many people go to university for academic study, more people should be encouraged to do vocational training because there is a lack of qualified workers such as electricians and plumbers. Do you agree or disagree?",
+        "essay_text": "Whether people should be encouraged more to study vocational courses due to the lack of workforce in that area or be encouraged to study at the university remains a big discussion. I believe both of these areas of study should be promoted equally, countries need academics as well as qualified workers.\nOne of the reasons that supports the encouragement to study either area, academic or vocational, is the worldwide need for the two types of professionals. For example, Australian government is currently offering work visas and permanent residencies to overseas qualified workers such as, carpenters, cooks, bar managers as well as doctors, nurses and psychologists. Essentially, this demonstrates that the two areas are equally needed and this happens in Canada and England too.\nAnother point to be considered is the increase in the people's needs due to the population growth, which, therefore, affects the need for more experts in all sectors. This includes professional from different fields, such as science, construction and even thinkers. If people is encouraged to study more in one field than others, this might be detrimental to societies, leaving one sector significantly more affected. Eventually, countries need a balance in the areas choosen for people to growth a career.\nIn conclusion, I support the idea of encouraging both, university and vocational studies. Many countries worldwide have expressed their need for the two types of workers. Besides, as the population is rapidly increasing, the need for experts in multiples areas is increasing too, so promoting both is the only way to maintain a balance.",
+        "actual_band": 7.5
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay addresses all parts of the prompt by arguing for a balanced approach between vocational and academic study. The position is clear and consistent throughout. Ideas are logically organized into paragraphs with clear topic sentences and supporting examples (e.g., Australian visa policies). Lexically, the candidate uses specific terminology such as 'vocational courses', 'permanent residencies', and 'detrimental'. Grammatically, while there are minor errors like 'people is' and 'choosen', they are non-systematic and do not impede the 100% clarity of the message. The response meets the criteria for Band 7 across all domains as it demonstrates a clear progression and a variety of complex structures despite minor inaccuracies.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses the prompt by providing a balanced argument that both university and vocational training are equally important. The position is clear and well-developed throughout. Main ideas are relevant and supported by specific examples, though the second body paragraph is slightly more generalized than the first."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "Information is logically organized with a clear overall progression. Cohesive devices such as 'For example', 'Therefore', and 'Besides' are used effectively to link ideas. Paragraphing is appropriate, and each paragraph contains a clear central topic."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The candidate uses a sufficient range of vocabulary to allow for flexibility and precision. Examples like 'vocational courses', 'workforce', and 'detrimental to societies' show an ability to use less common items. There are a few spelling and word-form errors (e.g., 'choosen', 'growth' instead of 'grow'), but they do not detract from clarity."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "A variety of complex structures are used with some flexibility. Sentences like 'Whether people should be encouraged more... remains a big discussion' show grammatical control. While there are a few errors (e.g., subject-verb agreement in 'people is' and missing articles), error-free sentences are frequent and communication is never impeded."
+          },
+          "final_comment": "This is a strong Band 7.0 performance. The essay is well-structured and directly answers the prompt with a clear, consistent position. To improve, the candidate should focus on minor grammatical precision, particularly subject-verb agreement and article usage, and ensure all spelling of high-frequency words is correct.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 0.5
+      }
+    },
+    {
+      "input": {
+        "index": 11,
+        "task": "While many people go to university for academic study, more people should be encouraged to do vocational training because there is a lack of qualified workers such as electricians and plumbers. Do you agree or disagree?",
+        "essay_text": "In today's era, most students look forward to enrolling in professional courses at universities. However, some believe that authorities should encourage teenagers to take vocational courses as there is a huge shortage of professionals like electricians and plumbers. In my opinion, while there is a scarcity of such workers and the government should make special arrangements for prospective learners, certain other factors should also be considered.\nDue to the insufficient work possibilities after completing vocational courses and extremely low wages, scholars are forced to take loans at high interest from banks to attend university programmes. An average adult has to pay more than 70,000 USD yearly for a typical professional course at a university, and most children are unable to accumulate sufficient funds in time, which forces them to borrow this amount from banks. The job market for plumbing and electrical work is highly unregulated, which leads to the exploitation of such workers by the established brands, further distressing the people. Some regulations should be established for these markets to decrease the risk factor for workers.\nOn the other hand, due to the continuing increase in our population, the demand for doctors, engineers, and professors is also rising. In recent years, governments from all over the world have reported the widening gap between the number of professionals available per 1000 people. For example, in India, there is only 1 doctor available per 50 people in urban areas, and the number is even more concerning in rural areas, where the figure of patients climbs even further.\nIn my opinion, authorities and universities should work together towards introducing scholarships and other benefits not only for learners of professional courses but also for peoples of vocational courses. Furthermore, better and more wages for plumbers and electricians could also be established to attract more students.\nIn conclusion, favourable policies should be implemented for qualified workers to attract more potential learners by the government, as well as lower tution fees for university attendees.",
+        "actual_band": 9.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The essay was evaluated based on the four IELTS criteria. For Task Response, the candidate addresses all parts of the prompt, including the specific examples (electricians/plumbers) and the underlying cause (lack of workers). The position is a nuanced 'balanced' view, which is acceptable for an 'agree or disagree' prompt. Coherence and Cohesion are strong with logical paragraphing and effective linking words. Lexical Resource shows some sophisticated items like 'scarcity' and 'unregulated,' though minor errors like 'peoples' and 'tution' keep it at Band 7. Grammatical Range and Accuracy is high, with a mix of complex structures and a high frequency of error-free sentences, though slight awkwardness in phrasing prevents a higher score.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses the main parts of the prompt and presents a clear position throughout the response. The ideas are extended and supported, particularly regarding the financial barriers to education and the necessity of academic professionals. However, some arguments, such as the specific cost of university (70,000 USD), are a bit specific and could be more generalized to improve focus on the vocational aspect."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "There is a clear progression throughout the essay, from the introduction of the problem to the discussion of barriers and the final recommendations. Paragraphing is logical, with each paragraph focusing on a central topic. Cohesive devices like 'However,' 'On the other hand,' and 'Furthermore' are used effectively, though some transitions are slightly mechanical."
+          },
+          "lexical_resource": {
+            "score": 7.0,
+            "comment": "The vocabulary is sufficient to allow for some flexibility and precision. Terms such as 'scarcity,' 'prospective learners,' and 'unregulated' demonstrate an ability to use less common items. There are a few errors in word choice (e.g., 'peoples' instead of 'people' and 'scholars' for students) and one spelling error ('tution'), but these do not detract from overall clarity."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 7.0,
+            "comment": "The candidate uses a variety of complex structures with reasonable accuracy. Many sentences are error-free, and punctuation is generally well-controlled. Minor errors, such as the word order in the final sentence ('by the government' at the end) and some slightly awkward phrasing, are present but do not impede communication."
+          },
+          "final_comment": "This is a solid Band 7.0 performance. The essay is well-organized and addresses the prompt with a mature, nuanced perspective. To improve, the candidate should focus on refining word choice (avoiding 'peoples' and 'scholars' in this context) and ensuring that the most relevant arguments regarding vocational training are prioritized over general university costs. Paying closer attention to spelling for common academic words like 'tuition' would also be beneficial.",
+          "overall_band_score": 7.0
+        },
+        "predicted_band": 7.0,
+        "loss": 2.0
+      }
+    },
+    {
+      "input": {
+        "index": 12,
+        "task": "Some people think that governments should ban dangerous sports, while others think people should have freedom to do any sports or activity. Discuss both views and give your own opinion",
+        "essay_text": "According to some people administration should stop the sports that are risky, while few others have an opinion that individuals should have liberty to perform any kind of sports or activity. In my opinion critical sports should be stopped because it not only dangerous but harmful for others as it attracts youngesters.\nFirstly, the sports activities which are risky, should be banned by the government as, they are the only ones who can actually stop this life taking so called adventure and put a full stop. Infact, people specially youngsters get affected as they get easily influenced and under peer pressure perform these tasks without any guidance or safety, for instance, road racing which is the major cause for accidents in many countries which not only effect them but the public arround, another example is Death's well where car drivers drive the car in a well in circular motion where their is no guarantee of life where at any moment people can die.\nSecondly, everyone should have right to perform sports or activities according to their taste, however, safety is the primary concern that one should keep in mind. while stopping all the ones which can actually take a life should not be performed.\nAs a result, these dangerous events has various outcomes majority of the performers turnout to be handicapped or with broken bones. so guidelines and measures taken by government is necessary.\nIn conculsion, the risky sports activities should banned and government should only allow the events with keeping the risk in mind and the after effects of the activity that what influence will it have on people of diiferent age criteria.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "I evaluated the essay against the four IELTS criteria. Task Response: The candidate addresses both views, but the 'freedom' side is significantly less developed than the 'banning' side, justifying a Band 6. Coherence & Cohesion: The essay uses standard linkers and has a clear progression, though paragraphing is unbalanced, warranting a Band 6. Lexical Resource: Vocabulary includes effective terms like 'liberty' and 'peer pressure', but frequent spelling mistakes limit it to Band 6. Grammatical Range & Accuracy: The candidate attempts complex structures with a mix of success; while errors are frequent (missing verbs, subject-verb agreement), they do not impede communication, fitting the Band 6 descriptor. The average is 6.0.",
+          "task_fulfillment": {
+            "score": 6.0,
+            "comment": "The response addresses all parts of the prompt, including both views and a clear personal opinion. However, the discussion is unbalanced; the 'ban' side is supported with examples (road racing, Death's well), while the 'freedom' side is only briefly mentioned in a single sentence. This uneven development is a characteristic of Band 6."
+          },
+          "coherence_and_cohesion": {
+            "score": 6.0,
+            "comment": "There is a clear overall progression from introduction to conclusion. Cohesive devices like 'Firstly', 'Secondly', and 'As a result' are used to some effect, though they feel somewhat mechanical. Paragraphing is used, but the second body paragraph is noticeably underdeveloped, and the transition between ideas within sentences is occasionally clunky."
+          },
+          "lexical_resource": {
+            "score": 6.0,
+            "comment": "The vocabulary is generally adequate for the task, with some good usage of words such as 'administration', 'liberty', and 'peer pressure'. Meaning is always clear, but there are frequent spelling errors ('youngesters', 'arround', 'conculsion', 'diiferent') and some awkward collocations ('critical sports', 'life taking so called adventure') that prevent a higher score."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.0,
+            "comment": "The candidate uses a mix of simple and complex sentence forms, including relative clauses. Grammatical errors are frequent—such as the omission of 'to be' ('it not only dangerous', 'should banned'), subject-verb agreement ('events has'), and punctuation errors—but these errors rarely impede the reader's understanding of the text."
+          },
+          "final_comment": "The candidate has a solid grasp of the essay structure and a clear position. To improve, they should ensure that both sides of the argument are developed with equal depth and evidence. Additionally, focusing on basic grammatical accuracy (especially passive voice and subject-verb agreement) and double-checking spelling for common words would help elevate the score.",
+          "overall_band_score": 6.0
+        },
+        "predicted_band": 6.0,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 13,
+        "task": "Some experts believe that when a country is already rich, any additional increase in economic wealth does not make its citizens any more satisfied. To what extent do you agree or disagree?",
+        "essay_text": "The thought of some experts, is that people from rich countries are not satisfied by an ipotetical increase in their economy. In this essay I will discuss this point of view and I will explain why I am not sure I agree with that.\nIt is generally believed by some professional figures, that additionals rise in economic wealth are not so crucial for a rich coutry. People from countries sush as Japan, the U.S.A, Switzerland or Cina are aware of their wide economic power and these governments offer a lot of benefits for their citizens. Thus, people have yet what they want, such as fundings for projects, well-organized cities, a lot of job opportunities. In fact, they do not fell a significant sense of satisfaction in the increase of their economy.\nMade this point, it is also true that some surveys used by The Italian University of Parma, reveal that citizens from coutries which a strong economy, are really grateful and satisfied by any additional rise, in the economic sector. As consequence due to this increase, they can ask more fundings for some start up or to improve the technology equipment in schools. Personally, I tend to think as a matter of fact that this is the right view. Because it is logical that more money mean more opportunities in any sector of the country. Hospitals, schools, museum and even historical buildings can have the possibility to obteind a lot of benefits.\nTo conclude, in this essay I discuss the generel view of some experts about people from rich countries. I also explained why I strongly disagree with them.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The candidate addresses both sides of the prompt and provides a clear position, though the development of arguments is somewhat repetitive. The structure is logical with clear paragraphing, which supports Coherence and Cohesion at a Band 6 level. However, the response is significantly hampered by frequent spelling errors (e.g., 'ipotetical', 'coutry', 'Cina', 'sush', 'obteind') and grammatical slips (subject-verb agreement like 'more money mean', and pluralization errors like 'additionals rise'). These errors are frequent enough to limit Lexical Resource and Grammatical Range and Accuracy to the 5.5 range, as they are noticeable and occasionally cause the reader to pause, though they do not totally block communication.",
+          "task_fulfillment": {
+            "score": 6.5,
+            "comment": "The candidate addresses all parts of the prompt and expresses a clear position (disagreement with the experts). Main ideas are relevant, but the supporting arguments tend to be a bit repetitive, particularly the idea that more money equals more opportunities/benefits."
+          },
+          "coherence_and_cohesion": {
+            "score": 6.0,
+            "comment": "Information is logically organized and there is a clear overall progression. Paragraphing is used effectively. However, cohesive devices are somewhat mechanical ('In this essay I will...', 'To conclude'), and some referencing is slightly awkward ('Made this point')."
+          },
+          "lexical_resource": {
+            "score": 5.5,
+            "comment": "The range of vocabulary is minimally adequate for the task. There are frequent spelling errors ('ipotetical', 'coutry', 'Cina', 'sush', 'obteind', 'generel') and some lapses in word choice ('have yet what they want' instead of 'already'), which are noticeable and occasionally distract the reader."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 5.5,
+            "comment": "The candidate attempts a mix of simple and complex sentence forms. However, grammatical errors are frequent: subject-verb agreement ('money mean', 'government offer'), adjective pluralization ('additionals rise'), and inconsistent noun forms ('Hospitals, schools, museum'). Punctuation is also occasionally faulty."
+          },
+          "final_comment": "The response demonstrates a clear understanding of the task and maintains a consistent opinion. To improve, the candidate should focus on spelling accuracy and basic grammatical consistency (subject-verb agreement and plural nouns). Additionally, expanding the variety of cohesive devices beyond standard formulaic phrases would enhance the flow of the writing.",
+          "overall_band_score": 6.0
+        },
+        "predicted_band": 6.0,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 14,
+        "task": "Some experts believe that when a country is already rich, any additional increase in economic wealth does not make its citizens any more satisfied. To what extent do you agree or disagree?",
+        "essay_text": "The thought of some experts, is that people from rich countries are not satisfied by an ipotetical increase in their economy. In this essay I will discuss this point of view and I will explain why I am not sure I agree with that.\nIt is generally believed by some professional figures, that additionals rise in economic wealth are not so crucial for a rich coutry. People from countries sush as Japan, the U.S.A, Switzerland or Cina are aware of their wide economic power and these governments offer a lot of benefits for their citizens. Thus, people have yet what they want, such as fundings for projects, well-organized cities, a lot of job opportunities. In fact, they do not fell a significant sense of satisfaction in the increase of their economy.\nMade this point, it is also true that some surveys used by The Italian University of Parma, reveal that citizens from coutries which a strong economy, are really grateful and satisfied by any additional rise, in the economic sector. As consequence due to this increase, they can ask more fundings for some start up or to improve the technology equipment in schools. Personally, I tend to think as a matter of fact that this is the right view. Because it is logical that more money mean more opportunities in any sector of the country. Hospitals, schools, museum and even historical buildings can have the possibility to obteind a lot of benefits.\nTo conclude, in this essay I discuss the generel view of some experts about people from rich countries. I also explained why I strongly disagree with them.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "The candidate addressed the prompt and provided a clear position, although the introduction was slightly hesitant compared to the strong conclusion. Ideas were organized logically with distinct paragraphs for each viewpoint, showing a clear progression. Lexical Resource was adequate for the task, though it was marred by frequent spelling errors and L1 (Italian) interference ('Cina', 'ipotetical'). Grammatical Range showed attempts at complex structures, such as passive forms and relative clauses, but was limited by frequent errors in subject-verb agreement, noun countability, and punctuation. Overall, the message is clear and communication is not impeded, placing the response firmly in the Band 6.0 range.",
+          "task_fulfillment": {
+            "score": 6.0,
+            "comment": "The candidate addresses all parts of the prompt and expresses a clear position (disagreeing with the experts), although there is a slight inconsistency between the introduction ('not sure I agree') and the conclusion ('strongly disagree'). The main ideas are relevant, but the development is somewhat repetitive, focusing primarily on the general availability of 'funding' for schools and hospitals in both body paragraphs."
+          },
+          "coherence_and_cohesion": {
+            "score": 6.5,
+            "comment": "Information is organized logically with a clear overall progression. The essay follows a standard structure (Intro, View A, View B + Opinion, Conclusion). Cohesive devices like 'Thus', 'In fact', and 'As consequence' are used to good effect, though some transitions like 'Made this point' are slightly mechanical or awkward."
+          },
+          "lexical_resource": {
+            "score": 6.0,
+            "comment": "The range of vocabulary is generally adequate ('technological equipment', 'job opportunities', 'surveys'). However, there are frequent spelling and word formation errors ('ipotetical', 'additionals', 'coutry', 'Cina', 'fell', 'obteind', 'generel'). While these errors are noticeable, they do not impede the reader's understanding of the text."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.0,
+            "comment": "A mix of simple and complex sentence forms is used. The candidate attempts passive structures ('It is generally believed') and relative clauses. However, errors are frequent: subject-verb agreement ('more money mean'), pluralization of adjectives ('additionals rise'), and missing verbs in relative clauses ('countries which a strong economy'). Punctuation is also occasionally faulty, but communication remains clear."
+          },
+          "final_comment": "The candidate demonstrates a solid ability to structure an argument and address the prompt. To improve, the writer should focus on spelling accuracy and reducing mother-tongue interference (e.g., using 'China' instead of 'Cina'). Additionally, practicing subject-verb agreement and plural noun forms would enhance the grammatical score. Developing more varied supporting arguments beyond 'funding for schools and hospitals' would also strengthen the Task Response.",
+          "overall_band_score": 6.0
+        },
+        "predicted_band": 6.0,
+        "loss": 1.0
+      }
+    }
+  ]
+}

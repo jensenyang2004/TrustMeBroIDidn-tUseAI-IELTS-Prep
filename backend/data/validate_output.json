@@ -1,0 +1,175 @@
+{
+  "summary": {
+    "samples_evaluated": 5,
+    "n_samples": 100,
+    "average_mae": 1.2,
+    "failed_indices": []
+  },
+  "records": [
+    {
+      "input": {
+        "index": 0,
+        "task": "Some countries achieve international sports by building specialised facilities to train top athletes, instead of providing sports facilities that everyone can use. Do you think this is positive or negative development?Discuss both views and give your opinion.",
+        "essay_text": "International sports events require the most well-trained athletes for each country, in order to achieve this goal countries make an effort to build infrastructure designed to train top athletes. Although this policy can indeed make fewer sports facilities for ordinary people, investing in the best athletes is vital to develop competitive sports performances in each country.\nOn the one hand, building specific infrastructure for the best athletes is crucial in order to get better results at international sports events such as The Olympics or the World Cup. The importance of getting better results is that it creates awareness of the importance of sports in society and motivates more people to do a sport. In this way, investing in these developments can help countries to develop an integral sport policy that can benefit everyone.\nOn the other hand, one can argue that a negative effect could be that less infrastructure is built for the rest of the people. However, people who practice a sport in their daily life do not necessarily need some facilities to do sports. For example, people often use public spaces to do sports such as running or doing yoga at the nearest park to their home. So, for people who is not top athletes there could be some alternatives for sports facility that ,is not the case for training top athletes.\nTo sum up, I strongly believe countries should invest in specialised infrastructure for their best athletes because in the long term is going to generate more motivation to do sports, to invest in sports at schools and therefore to build more sports infrastructure for everyone.",
+        "actual_band": 9.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "Initial proposed grades: TR 7.0, CC 6.5, LR 6.0, GRA 6.0. For Task Response, the candidate addresses both views and maintains a clear position throughout, justifying a 7.0. For Coherence and Cohesion, the organization is logical with clear paragraphing, but some transitions are mechanical and there is some wordiness, justifying a 6.5. For Lexical Resource, while the candidate uses terms like 'infrastructure' and 'integral sport policy', there is significant repetition of 'sports' and 'athletes' and several collocation errors (e.g., 'make fewer sports facilities'), justifying a 6.0. For Grammatical Range and Accuracy, errors are frequent and noticeable, including subject-verb agreement ('people who is') and punctuation issues, placing it in Bucket A (Band 6). The overall average is 6.375, which according to the instruction to round down to the nearest 0.5, results in a 6.0.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the task. They discuss both the focus on elite athletes and the alternative of public facilities, maintaining a clear position that supporting elite athletes provides a long-term motivational benefit for the general population. The development of ideas is sufficient, though the argument regarding public spaces is somewhat thin."
+          },
+          "coherence_and_cohesion": {
+            "score": 6.5,
+            "comment": "Information is organized logically with a clear progression. Paragraphing is used effectively. However, the use of cohesive devices is somewhat mechanical ('On the one hand', 'On the other hand'). There is also some inefficiency in phrasing (Clarity Density Principle), such as 'The importance of getting better results is that it creates...', which could be more direct."
+          },
+          "lexical_resource": {
+            "score": 6.0,
+            "comment": "The vocabulary is adequate for the task but lacks precision and variety. The word 'infrastructure' and 'sports' are heavily repeated. There are occasional errors in word choice and collocation, such as 'make fewer sports facilities' instead of 'provide' or 'build'. The vocabulary is adequate but predictable, fitting the Band 6 descriptor."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.0,
+            "comment": "The essay falls into Bucket A. Errors are frequent and noticeable, such as subject-verb agreement ('people who is'), comma splices in the introduction, and missing subjects ('is going to generate'). While the meaning remains clear, the density of these errors prevents a higher score."
+          },
+          "final_comment": "The candidate demonstrates a solid ability to structure an argument and address a two-part prompt. The main areas for improvement are: 1) Increasing lexical variety to avoid repetitive use of key terms like 'sports' and 'infrastructure', 2) Improving grammatical accuracy, particularly regarding subject-verb agreement and sentence boundaries, and 3) Enhancing communication efficiency by removing filler phrases and wordy constructions.",
+          "overall_band_score": 6.0
+        },
+        "predicted_band": 6.5,
+        "loss": 2.5
+      }
+    },
+    {
+      "input": {
+        "index": 1,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "There is currently a material issue that while the majority of students are eager to learn business or art in university, there are only a few students who want to study science, leading to numerous negative effects on community. With respect to this matter, there are also a wide variety of factors that influence the decision of students to not study science subjects.\nIt is undeniable that there are many reasons why undergraduates avoid studying science. A classic example of this is that science is extremely difficult to understand. In order to fully comprehend a particular scientific phenomenon, students have to learn complex theories that cause the phenomena. Therefore, they tend to choose other subjects that are easier to understand. Another common reason is a small amount of salary for working in scientific fields. When student choose subjects to study at university, they tend to enroll in an area that they could make a lot of money from having that knowledge. Since science career does not offer high remuneration, student possibly prefer to study other subjects such as business which offers higher salary instead.\nIt is true that there are many negative consequences on society of having less undergraduates studying science. One clear impact of this is the decreasing in innovation. This is because scientific comprehension is a mandatory requirement for creating an innovation. Hence, having only a few people who understand science will inevitably hold the creation of modern innovation. Furthermore, the current environmental crisis, such as an increase in global temperature, would perhaps reach a point of no return. Since the crisis relates to environment which is one of scientific aspects, having a small number of attention from students would lead to less social pressure to address this crisis properly.\nIn conclusion, it is the fact that science is complicated and people who have scientific knowledge can make less money than those who are expertise in other areas, resulting in less popularity in learning about science for university students. Moreover, with the rise in this problem, this trend possibly suspends the creation of new innovation and deteriorate the current environmental issues, which are two most crucial matters for society.",
+        "actual_band": 8.5
+      },
+      "output": {
+        "prediction": {
+          "self_check": "Initial proposed grades: TF 7.0, CC 7.0, LR 6.5, GRA 6.0. For Task Fulfillment, the candidate addresses all parts of the prompt with relevant ideas (difficulty and salary as reasons; innovation and environmental crisis as effects), justifying a 7.0. For Coherence and Cohesion, the organization is logical and paragraphs are clearly defined, although some transitions are mechanical, fitting the 7.0 descriptor. For Lexical Resource, while there are some effective words like 'remuneration' and 'mandatory', there are imprecise collocations such as 'material issue' and 'small number of attention', which keeps it at a 6.5. For Grammatical Range and Accuracy, errors are frequent (subject-verb agreement 'student choose', countability 'less undergraduates' and 'number of attention', and word form 'who are expertise'), placing it in Bucket A (Band 6.0) despite the use of complex structures.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The response covers all parts of the prompt. It provides two distinct reasons (academic difficulty and financial incentives) and two clear effects (innovation and environmental awareness). The position is clear throughout the essay, though the development of the environmental point is slightly less convincing than the innovation argument."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.0,
+            "comment": "The essay is logically organized with a clear progression from reasons to effects. Paragraphing is used effectively. While cohesive devices like 'Furthermore' and 'In conclusion' are present, some phrases like 'With respect to this matter' function as filler and add little meaning, slightly impacting the efficiency of communication."
+          },
+          "lexical_resource": {
+            "score": 6.5,
+            "comment": "The candidate uses a range of vocabulary including 'remuneration', 'comprehend', and 'innovation'. However, inaccuracies in word choice and collocation are present, such as 'material issue' (used awkwardly), 'small amount of salary' instead of 'low salary', and 'small number of attention' (attention is uncountable). These errors prevent a higher score under the Clarity Density Principle."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.0,
+            "comment": "The candidate attempts a variety of complex structures, but errors are frequent and noticeable. Issues with subject-verb agreement ('student choose'), countability ('less undergraduates', 'a small number of attention'), and word form ('who are expertise') occur throughout the text, though they rarely impede the reader's understanding."
+          },
+          "final_comment": "The candidate demonstrates a solid understanding of the task and organizes their thoughts logically. To improve, the writer should focus on grammatical accuracy, particularly subject-verb agreement and the distinction between countable and uncountable nouns. Additionally, replacing 'filler' phrases with more precise, direct statements would enhance the overall clarity and impact of the writing.",
+          "overall_band_score": 6.5
+        },
+        "predicted_band": 7.0,
+        "loss": 1.5
+      }
+    },
+    {
+      "input": {
+        "index": 2,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "In recent years, many countries have reported a decrease in the number of students choosing science subjects in universities. This is a concerning trend that can have a profound impact on society. In this essay, I will discuss the reasons behind this problem and its implications.\nThe first reason for fewer students selecting science subjects is likely that these courses are difficult to comprehend. In general, science courses such as mathematics and physics involve complex theories, formulas, and concepts that require a great deal of hard work to understand. Furthermore, they are often taught in a theoretical manner and fail to show students how this knowledge can be used in real life. In other words, it may seem impractical for them to learn science courses. Lastly, it may be hard to acquire a practical job through these theoretical subjects in the future. As a result, students may give up studying science because they find scientific studies unappealing, impractical, and not promising for their future careers.\nConsequently, the lack of students studying science subjects can have a significant impact on society. First and foremost, there may not be enough qualified scientists and teachers to teach the theoretical foundation of technology, medicine, and engineering. This could lead to slow progress in these areas, and society may suffer as a result. Moreover, the decline in the number of science students could lead to a shortage of scientists for research and development in industry, which would have a negative impact on the nation's economy.\nTo sum up, the decreasing number of students selecting science courses in universities is a worrying phenomenon. The main reasons for this are the difficulty of science courses and the lack of job opportunities in science after studies. This could have a negative impact on society, as there may not be enough qualified scientists to pursue research, and this could impede progress in fields such as technology and medicine.",
+        "actual_band": 8.5
+      },
+      "output": {
+        "prediction": {
+          "self_check": "Initial proposed grades: TR 7.0, CC 7.5, LR 7.5, GRA 8.0. Self-check: For Task Response, the candidate addresses all parts of the prompt with clear reasons (difficulty, theoretical teaching, job prospects) and effects (teacher shortage, R&D stagnation). However, the argument that science subjects don't lead to jobs is an over-generalization, justifying a 7.0 rather than an 8.0. For Coherence and Cohesion, the sequencing is very logical and transitions are seamless, though slightly formulaic, supporting a 7.5. For Lexical Resource, the candidate follows the Clarity Density Principle excellently, using precise terms like 'theoretical manner' and 'impede progress' without fluff; a 7.5 is appropriate for this precision. For Grammatical Range and Accuracy, the essay falls into Bucket C (Band 8) as I have to look hard to find any errors; sentences are consistently clean and complex. Average is 7.5. Rounded down to the nearest 0.5 according to instructions: 7.5.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses all parts of the prompt. A clear position is maintained throughout. Main ideas are extended and supported, although there is a slight over-generalization regarding the lack of job opportunities for science graduates, which is not fully nuanced."
+          },
+          "coherence_and_cohesion": {
+            "score": 7.5,
+            "comment": "Information is organized logically with a clear progression. Paragraphing is used effectively. Cohesive devices are used accurately, although some transitions (e.g., 'First and foremost', 'To sum up') are somewhat standard. The flow between ideas is smooth and effortless to follow."
+          },
+          "lexical_resource": {
+            "score": 7.5,
+            "comment": "The vocabulary is used with high precision and efficiency, adhering to the Clarity Density Principle. Terms like 'theoretical foundation', 'impede progress', and 'worrying phenomenon' are used in the correct context. There is no evidence of 'filler' phrasing or inflated vocabulary that obscures meaning."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 8.0,
+            "comment": "The essay falls into Bucket C. The majority of sentences are error-free. The candidate demonstrates a high level of control over complex structures, such as relative clauses and conditional-style modal constructions, without compromising clarity."
+          },
+          "final_comment": "The candidate produced a very clear, well-structured essay that prioritizes communication efficiency. Strengths include exceptional grammatical accuracy and logical organization. To improve, the candidate could provide more nuanced development of arguments to avoid over-generalization, particularly in the task response section.",
+          "overall_band_score": 7.5
+        },
+        "predicted_band": 7.5,
+        "loss": 1.0
+      }
+    },
+    {
+      "input": {
+        "index": 3,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "It is a serious problem that there is an inadequate number of students who tend to select science as their major subject in universities in many countries. In my view, students may think that studying science has not a good career path. Also, this issue may deeply affect the international state of a country.\nThe main reason why people do not think to study science is that they may see science as something unpractical, and potentially, they are hard to find a job when they graduate. Students are generally afraid that there is no employment opportunity after they graduate from university. Unlike engineering and business management, in which fields employers provide plenty of vocational positions for graduated students because there are lots of companies activating in these fields and universities may provide some practical training courses and internships. Students studying science have a relatively narrow way to walk, and may just be scientists. Moreover, although a successful scientist can get a massive bonus from some prizes, it is too hard to accomplish and is more likely to fail. Therefore, Students will avoid taking those risks and choose other subjects that are relatively stable and easy to find a job.\nThis trend will eventually decrease the state of a country. Developing science can provide a strong and firm foundation for a country to establish a healthy and prosperous community. If there are not enough scientists, the whole scientific ability will decrease. Not only will the government pay extra money to other foreign countries to buy the required technology such as military equipment, but the public needs to spend more time and pay more effort to maintain the international standard production rate of a country. It is extremely dangerous that a nation easily suffers from a financial crisis and, finally, it influences the living standard of its citizens and causes damage to its financial systems.\nIn summary, while science is regarded as a \"useless\" subject because of its narrow career path and low success rate, it is vital that the economic systems would be affected if a country develop without scientists.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "Initial proposed scores: TR 6.5, CC 6.0, LR 6.0, GRA 6.0. Re-evaluating against descriptors: TR 6.5 is justified because both reasons and effects are addressed and developed, though the link between a lack of scientists and a 'financial crisis' is a slight over-generalization. CC 6.0 is accurate as paragraphing is clear but cohesion is somewhat mechanical (e.g., repetitive sentence starts) and the Clarity Density Principle reveals inefficiencies like 'relatively narrow way to walk.' LR 6.0 is appropriate due to word formation errors like 'unpractical' and awkward collocations like 'companies activating.' GRA 6.0 is confirmed because while complex structures are attempted (not only... but also), errors are frequent—such as 'if a country develop' and 'they are hard to find a job'—though communication is never lost. The overall average is 6.125, which rounds down to 6.0.",
+          "task_fulfillment": {
+            "score": 6.5,
+            "comment": "The candidate addresses both parts of the prompt, providing distinct reasons (career prospects, difficulty) and several effects on society (economic dependence, financial stability). The position is clear throughout. However, some ideas, particularly the link between scientific decline and a national financial crisis, are slightly over-generalized and could benefit from more nuanced support."
+          },
+          "coherence_and_cohesion": {
+            "score": 6.0,
+            "comment": "Information is arranged logically with a clear overall progression. Paragraphing is used effectively. However, cohesive devices are sometimes used mechanically, and the essay fails the Clarity Density test in several places; phrases like 'relatively narrow way to walk' and 'international state of a country' are inefficient or vague compared to more precise alternatives."
+          },
+          "lexical_resource": {
+            "score": 6.0,
+            "comment": "The vocabulary is adequate for the task, but lacks precision. There are several instances of awkward phrasing and word choice errors, such as 'unpractical' (impractical), 'companies activating' (operating), and 'massive bonus from some prizes.' These errors do not impede communication but prevent a higher score under the Clarity Density Principle."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.0,
+            "comment": "The candidate uses a mix of simple and complex sentence forms. However, grammatical errors are frequent: 'studying science has not' (negation), 'they are hard to find a job' (incorrect subject-predicate structure), 'if a country develop' (subject-verb agreement), and inconsistent capitalization of 'Students.' These errors are noticeable but do not significantly obscure the meaning."
+          },
+          "final_comment": "The essay demonstrates a good understanding of the task and is organized logically. To improve, the candidate should focus on lexical precision—choosing the exact word rather than a descriptive phrase—and address recurring grammatical errors in subject-verb agreement and negation. Strengthening the logical links between the lack of scientists and specific societal outcomes would also elevate the Task Response score.",
+          "overall_band_score": 6.0
+        },
+        "predicted_band": 6.5,
+        "loss": 0.5
+      }
+    },
+    {
+      "input": {
+        "index": 4,
+        "task": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+        "essay_text": "It is a serious problem that there is an inadequate number of students who tend to select science as their major subject in universities in many countries. In my view, students may think that studying science has not a good career path. Also, this issue may deeply affect the international state of a country.\nThe main reason why people do not think to study science is that they may see science as something unpractical, and potentially, they are hard to find a job when they graduate. Students are generally afraid that there is no employment opportunity after they graduate from university. Unlike engineering and business management, in which fields employers provide plenty of vocational positions for graduated students because there are lots of companies activating in these fields and universities may provide some practical training courses and internships. Students studying science have a relatively narrow way to walk, and may just be scientists. Moreover, although a successful scientist can get a massive bonus from some prizes, it is too hard to accomplish and is more likely to fail. Therefore, Students will avoid taking those risks and choose other subjects that are relatively stable and easy to find a job.\nThis trend will eventually decrease the state of a country. Developing science can provide a strong and firm foundation for a country to establish a healthy and prosperous community. If there are not enough scientists, the whole scientific ability will decrease. Not only will the government pay extra money to other foreign countries to buy the required technology such as military equipment, but the public needs to spend more time and pay more effort to maintain the international standard production rate of a country. It is extremely dangerous that a nation easily suffers from a financial crisis and, finally, it influences the living standard of its citizens and causes damage to its financial systems.\nIn summary, while science is regarded as a \"useless\" subject because of its narrow career path and low success rate, it is vital that the economic systems would be affected if a country develop without scientists.",
+        "actual_band": 7.0
+      },
+      "output": {
+        "prediction": {
+          "self_check": "Initial proposed grades: TR 7.0, CC 6.5, LR 6.0, GRA 6.0. For Task Response, the candidate addresses all parts of the prompt with clear, relevant main ideas, justifying a 7.0. For CC, the progression is logical, but some phrasing is mechanical, and the 'Clarity Density' check reveals some inefficiency, keeping it at 6.5. For Lexical Resource, while there is adequate range ('vocational positions', 'prosperous community'), errors in word formation ('activating', 'unpractical') and vague phrasing ('international state') limit it to a 6.0. For GRA, the essay falls into Bucket A/B; while complex structures are attempted, errors in subject-verb agreement, capitalization, and sentence construction are frequent enough to preclude a 7.0. The average is 6.375, which rounds down to 6.0 as per the specified rule.",
+          "task_fulfillment": {
+            "score": 7.0,
+            "comment": "The candidate addresses both parts of the prompt (reasons and effects) clearly. The position is consistent throughout, arguing that the career path is the primary deterrent and that national economic/technological decline is the main consequence. Ideas are sufficiently extended, though some links (e.g., between a lack of scientists and an immediate financial crisis) are slightly over-generalized."
+          },
+          "coherence_and_cohesion": {
+            "score": 6.5,
+            "comment": "The essay is logically organized with a clear progression from introduction to reasons, then effects, and a conclusion. Cohesive devices are used appropriately, although some transitions feel slightly mechanical. Applying the Clarity Density Principle, some sentences are inefficient—for example, 'the public needs to spend more time and pay more effort to maintain the international standard production rate' is wordy and less clear than a direct statement about economic productivity."
+          },
+          "lexical_resource": {
+            "score": 6.0,
+            "comment": "The candidate uses an adequate range of vocabulary. There are successful attempts at less common lexical items like 'vocational' and 'prosperous.' However, there are notable inaccuracies in word choice and formation, such as 'unpractical' (impractical), 'companies activating' (active), and 'international state.' Some phrases like 'narrow way to walk' are slightly informal or idiomatic mismatches, which impacts the precision reward."
+          },
+          "grammatical_range_and_accuracy": {
+            "score": 6.0,
+            "comment": "This essay falls into Bucket A/B. While there is a mix of simple and complex sentence forms, errors are frequent. These include subject-verb agreement issues ('country develop'), incorrect sentence structures ('they are hard to find a job'), and inconsistent capitalization (e.g., 'Therefore, Students'). While these errors do not usually block communication, they are present throughout the text."
+          },
+          "final_comment": "The candidate has a clear understanding of the task and organizes ideas logically. To improve, the writer should focus on grammatical accuracy, particularly subject-verb agreement and capitalization. Additionally, applying the 'Clarity Density Principle' would help: replacing vague or inflated phrases like 'international standard production rate' with more precise, direct vocabulary would enhance both Lexical Resource and Cohesion scores.",
+          "overall_band_score": 6.0
+        },
+        "predicted_band": 6.5,
+        "loss": 0.5
+      }
+    }
+  ]
+}
