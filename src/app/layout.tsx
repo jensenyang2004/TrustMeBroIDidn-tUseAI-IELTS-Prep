@@ -9,13 +9,13 @@ import { usePathname } from "next/navigation";
 function AppLayout({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
   const pathname = usePathname();
-  const isAuthPage = pathname === "/login" || pathname === "/register";
+  const isPublicPage = pathname === "/" || pathname === "/login" || pathname === "/register";
 
   if (loading) return null;
 
   return (
     <div className="flex min-h-screen">
-      {!isAuthPage && user && <Sidebar />}
+      {!isPublicPage && user && <Sidebar />}
       <div className="flex-1 overflow-y-auto">
         {children}
       </div>
