@@ -1,8 +1,28 @@
 "use client";
 
-import { Users, Github, Mail, ExternalLink } from "lucide-react";
+import { Users, Github, Mail, ExternalLink, Loader2 } from "lucide-react";
+import { useAuth } from "@/components/AuthProvider";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function TeamPage() {
+  const { user, loading } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.push("/login");
+    }
+  }, [user, loading, router]);
+
+  if (loading || !user) {
+    return (
+      <div className="flex h-screen items-center justify-center">
+        <Loader2 className="animate-spin text-zinc-400" size={40} />
+      </div>
+    );
+  }
+
   return (
     <div className="p-8 max-w-4xl mx-auto space-y-10 pb-20">
       <div className="flex items-center gap-3 border-b pb-6">

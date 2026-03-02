@@ -2,6 +2,8 @@
 
 An open-source, AI-powered IELTS writing preparation tool designed to help you achieve your target band score. Powered by Google's Gemini AI, this application provides granular, highly specific feedback on full essays and generates targeted micro-exercises to build fundamental writing skills.
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=vercel)](https://trust-me-bro-i-didn-t-use-ai-ielts.vercel.app)
+
 ## ✨ Features
 
 ### 1. Full Essay Grader (Task 1 & Task 2)

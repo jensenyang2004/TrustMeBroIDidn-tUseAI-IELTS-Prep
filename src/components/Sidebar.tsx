@@ -58,7 +58,7 @@ export default function Sidebar() {
   };
 
   const navItems = [
-    { name: "Practice", href: "/", icon: PenTool },
+    { name: "Practice", href: "/practice", icon: PenTool },
     { name: "History", href: "/user", icon: History },
     { name: "Settings", href: "/settings", icon: Settings },
     { name: "Team", href: "/team", icon: Users },

@@ -17,16 +17,26 @@ import {
 } from "lucide-react";
 import { getVault, VaultItem, removeFromVault } from "@/lib/vault";
 import { supabase } from "@/lib/supabase";
+import { useAuth } from "@/components/AuthProvider";
+import { useRouter } from "next/navigation";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5001";
 
 export default function UserPage() {
+  const { user, loading } = useAuth();
+  const router = useRouter();
   const [vault, setVault] = useState<VaultItem[]>([]);
   const [history, setHistory] = useState<any[]>([]);
   const [stats, setStats] = useState<any>(null);
   const [activity, setActivity] = useState<Record<string, number>>({});
   const [isLoading, setIsLoading] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.push("/login");
+    }
+  }, [user, loading, router]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -57,8 +67,10 @@ export default function UserPage() {
         setIsLoading(false);
       }
     };
-    fetchData();
-  }, []);
+    if (user) {
+      fetchData();
+    }
+  }, [user]);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
